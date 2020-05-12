@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kugougo.github.io/"/>
-  <updated>2020-05-11T13:24:48.051Z</updated>
+  <updated>2020-05-12T15:40:24.504Z</updated>
   <id>https://kugougo.github.io/</id>
   
   <author>
@@ -17,34 +17,33 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://kugougo.github.io/2020/05/11/hello-world/"/>
-    <id>https://kugougo.github.io/2020/05/11/hello-world/</id>
-    <published>2020-05-11T13:24:48.051Z</published>
-    <updated>2020-05-11T13:24:48.051Z</updated>
+    <title>赋闲的一天</title>
+    <link href="https://kugougo.github.io/2020/05/12/%E8%B5%8B%E9%97%B2%E7%9A%84%E4%B8%80%E5%A4%A9/"/>
+    <id>https://kugougo.github.io/2020/05/12/%E8%B5%8B%E9%97%B2%E7%9A%84%E4%B8%80%E5%A4%A9/</id>
+    <published>2020-05-12T14:42:03.000Z</published>
+    <updated>2020-05-12T15:40:24.504Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
-        
-      
+      &lt;p&gt;毕业报告完成的匆匆忙忙,没有一丝急迫感,貌似也找不到什么特别的感觉,闲来无事记上一记.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://images.pexels.com/photos/3284294/pexels-photo-3284294.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
     
     </summary>
     
     
+      <category term="杂记" scheme="https://kugougo.github.io/categories/%E6%9D%82%E8%AE%B0/"/>
+    
+    
+      <category term="蹉跎岁月" scheme="https://kugougo.github.io/tags/%E8%B9%89%E8%B7%8E%E5%B2%81%E6%9C%88/"/>
     
   </entry>
   
   <entry>
     <title>第一次搭建hexo博客的历程</title>
-    <link href="https://kugougo.github.io/2020/05/10/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8E%86%E7%A8%8B/"/>
-    <id>https://kugougo.github.io/2020/05/10/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8E%86%E7%A8%8B/</id>
-    <published>2020-05-10T07:54:04.000Z</published>
-    <updated>2020-05-12T01:11:48.633Z</updated>
+    <link href="https://kugougo.github.io/2020/05/11/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8E%86%E7%A8%8B/"/>
+    <id>https://kugougo.github.io/2020/05/11/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8E%86%E7%A8%8B/</id>
+    <published>2020-05-11T07:54:04.000Z</published>
+    <updated>2020-05-12T13:38:50.318Z</updated>
     
     <summary type="html">
     
@@ -60,6 +59,31 @@
     
     
       <category term="hexo基础" scheme="https://kugougo.github.io/tags/hexo%E5%9F%BA%E7%A1%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://kugougo.github.io/2020/05/04/hello-world/"/>
+    <id>https://kugougo.github.io/2020/05/04/hello-world/</id>
+    <published>2020-05-04T07:54:04.000Z</published>
+    <updated>2020-05-12T13:16:42.748Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+      <category term="遇见hexo" scheme="https://kugougo.github.io/categories/%E9%81%87%E8%A7%81hexo/"/>
+    
     
   </entry>
   

@@ -1220,7 +1220,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #dbd0c1;
+  background: #0194fe;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2809,24 +2809,6 @@ ul.breadcrumb li + li:last-child {
   height: 10px;
 /*background: url(../images/scrollbar_arrow.png) no-repeat 0 0;*/
 /*可以添加滚动条样式*/
-}
-@media screen and (min-width: 900px) {
-  .back-to-top {
-    right: 60px;
-    width: 70px;
-    height: 900px;
-    top: -900px;
-    bottom: unset;
-    transition: all 0.5s ease-in-out;
-    background: url("/images/scroll.png");
-  }
-  .back-to-top > i {
-    display: none;
-  }
-  .back-to-top.back-to-top-on {
-    bottom: unset;
-    top: calc(100vh - 900px - 200px);
-  }
 }
 #jrsc {
   font-style: italic;

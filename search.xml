@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>Hello World</title>
-    <url>/2020/05/11/hello-world/</url>
+    <url>/2020/05/04/hello-world/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 
@@ -17,10 +17,13 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
 ]]></content>
+      <categories>
+        <category>遇见hexo</category>
+      </categories>
   </entry>
   <entry>
     <title>第一次搭建hexo博客的历程</title>
-    <url>/2020/05/10/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8E%86%E7%A8%8B/</url>
+    <url>/2020/05/11/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8E%86%E7%A8%8B/</url>
     <content><![CDATA[<blockquote>
 <p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
 </blockquote>
@@ -44,9 +47,9 @@
 </li>
 </ul>
 <h4 id="目前在计划中的事情："><a href="#目前在计划中的事情：" class="headerlink" title="目前在计划中的事情："></a>目前在计划中的事情：</h4><ul>
-<li>[ ]找到一个免费的图床为博客后续做准备</li>
-<li>[ ]将<strong>Markdown</strong>用于写写日常来练习</li>
-<li>[ ]继续打磨我的博客</li>
+<li>[x]找到一个免费的图床为博客后续做准备</li>
+<li>[x]将<strong>Markdown</strong>用于写写日常来练习</li>
+<li>[x]继续打磨我的博客</li>
 <li>[ ]好好学习，天天向上  </li>
 </ul>
 <h4 id="遇到的些许问题"><a href="#遇到的些许问题" class="headerlink" title="遇到的些许问题:"></a>遇到的些许问题:</h4><ol>
@@ -69,6 +72,29 @@
       </categories>
       <tags>
         <tag>hexo基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>赋闲的一天</title>
+    <url>/2020/05/12/%E8%B5%8B%E9%97%B2%E7%9A%84%E4%B8%80%E5%A4%A9/</url>
+    <content><![CDATA[<p>毕业报告完成的匆匆忙忙,没有一丝急迫感,貌似也找不到什么特别的感觉,闲来无事记上一记.</p>
+<p><img src="https://images.pexels.com/photos/3284294/pexels-photo-3284294.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></p>
+<a id="more"></a>
+<h2 id="又来折腾主题了"><a href="#又来折腾主题了" class="headerlink" title="又来折腾主题了"></a>又来折腾主题了</h2><p>闲下来又把hexo从next换到butterfly,花了半天时间布置好了,还是觉得next简洁明了,适合我这单纯聊聊日常的人.折腾的太花里胡哨也让自己审美疲劳,于是又把报错的next搬了回来,迁移了此前发的一篇post,终归还是回来了!去掉了一些花里胡哨的操作又开始上路了.</p>
+<h2 id="Microsoft-Edge体验"><a href="#Microsoft-Edge体验" class="headerlink" title="Microsoft Edge体验"></a>Microsoft Edge体验</h2><p>刚好在调试博客的时候chrome出问题了,估计是昨天调试butterfly的时候引用<a href="https://www.pexels.com/zh-cn/" target="_blank" rel="noopener">Pexels</a>的4k超清背景图导致缓存一时不能自动清理,只会<code>CTRL+SHIFT+R</code>勉强操作一波,把自己给憨到了.随之打开关在小黑屋的Microsoft Edge,刚好提示有全新内核的.便想着体验体验   </p>
+<ol>
+<li><a href="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4ubMP" target="_blank" rel="noopener">新图标</a></li>
+<li><a href="https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4u46M" target="_blank" rel="noopener">非常漂亮的界面</a>  </li>
+</ol>
+<p>不得不说体验下来还是很舒服的,插件和书签还有历史记录全部从chrome搬了过来,同步到位的感觉挺舒服的,毕竟也是有chrome的高贵血统了.chrome确实也不如它漂亮,但是加载起网页来还是有蛮多不足的,遂又把chrome固定到了任务栏里做常客.</p>
+<h2 id="B-F-F"><a href="#B-F-F" class="headerlink" title="B F F"></a>B F F</h2><p>这一来二去折腾的我还挺享受这种感觉的,毕竟闲着也是闲着,干嘛不找点乐子呢?</p>
+<hr>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>蹉跎岁月</tag>
       </tags>
   </entry>
 </search>
