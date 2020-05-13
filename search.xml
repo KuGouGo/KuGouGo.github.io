@@ -1,56 +1,198 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>第一次搭建hexo博客的历程</title>
-    <url>/2020/05/11/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8E%86%E7%A8%8B/</url>
-    <content><![CDATA[<blockquote>
-<p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
-</blockquote>
-<p><img src="https://images.pexels.com/photos/3873378/pexels-photo-3873378.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></p>
+    <title>Mastering Markdown</title>
+    <url>/2020/05/13/Mastering-Markdown/</url>
+    <content><![CDATA[<p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p>
 <a id="more"></a>
-<p>经过几天初步探索与实践，一路摸爬滚打，开始有了现在的效果。今天写下第一篇小记来记录下。</p>
-<h4 id="目前初步完成了以下"><a href="#目前初步完成了以下" class="headerlink" title="目前初步完成了以下:"></a>目前初步完成了以下:</h4><ul>
-<li>完成了博客的初步搭建，历时两天</li>
-<li>完成了部分个性化的内容，历时五天<ul>
-<li>通过<strong>Aplayer</strong>设置歌单</li>
-<li>添加博客背景</li>
-<li>添加了可爱的看板娘</li>
-<li>设置了博客运行时间</li>
-<li>添加了评论系统  </li>
-<li>添加了个性back2top</li>
-<li>添加了今日诗词</li>
-<li>添加了文末声明</li>
-<li>添加了博客数据统计</li>
-<li>更新了文末标签</li>
+<p><strong>What you will learn:</strong></p>
+<ul>
+<li>How the Markdown format makes styled collaborative editing easy</li>
+<li>How Markdown differs from traditional formatting approaches</li>
+<li>How to use Markdown to format text</li>
+<li>How to leverage GitHub’s automatic Markdown rendering</li>
+<li>How to apply GitHub’s unique Markdown extensions</li>
 </ul>
+<h2 id="What-is-Markdown"><a href="#What-is-Markdown" class="headerlink" title="What is Markdown?"></a>What is Markdown?</h2><p><a href="https://daringfireball.net/projects/markdown/" target="_blank" rel="noopener">Markdown</a> is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like <code>#</code> or <code>*</code>.</p>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><div class="tabs" id="text"><ul class="nav-tabs"><li class="tab active"><a href="#text-1">Text</a></li><li class="tab"><a href="#text-2">Lists</a></li><li class="tab"><a href="#text-3">Images</a></li><li class="tab"><a href="#text-4">Headers & Quotes</a></li><li class="tab"><a href="#text-5">Code</a></li><li class="tab"><a href="#text-6">Extras</a></li></ul><div class="tab-content"><div class="tab-pane active" id="text-1"><pre><code>It&apos;s very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)</code></pre><p>It’s very easy to make some words <strong>bold</strong> and other words <em>italic</em> with Markdown. You can even <a href="http://google.com" target="_blank" rel="noopener">link to Google!</a></p></div><div class="tab-pane" id="text-2"><pre><code>Sometimes you want numbered lists:
+
+1. One
+2. Two
+3. Three
+
+Sometimes you want bullet points:
+
+* Start a line with a star
+* Profit!
+
+Alternatively,
+
+- Dashes work just as well
+- And if you have sub points, put two spaces before the dash or star:
+  - Like this
+  - And this</code></pre><p>  Sometimes you want numbered lists:</p>
+<ol>
+<li><p>One</p>
+</li>
+<li><p>Two</p>
+</li>
+<li><p>Three</p>
+<p>Sometimes you want bullet points:</p>
+</li>
+</ol>
+<ul>
+<li><p>Start a line with a star</p>
+</li>
+<li><p>Profit!</p>
+<p>Alternatively,</p>
 </li>
 </ul>
-<h4 id="目前在计划中的事情："><a href="#目前在计划中的事情：" class="headerlink" title="目前在计划中的事情："></a>目前在计划中的事情：</h4><ul>
-<li>[x]找到一个免费的图床为博客后续做准备</li>
-<li>[x]将<strong>Markdown</strong>用于写写日常来练习</li>
-<li>[x]继续打磨我的博客</li>
-<li>[ ]好好学习，天天向上  </li>
+<ul>
+<li>Dashes work just as well</li>
+<li>And if you have sub points, put two spaces before the dash or star:<ul>
+<li>Like this</li>
+<li>And this</li>
 </ul>
-<h4 id="遇到的些许问题"><a href="#遇到的些许问题" class="headerlink" title="遇到的些许问题:"></a>遇到的些许问题:</h4><ol>
-<li>next主题设置并不生效不停的采取<code>$ hexo clean</code> <code>$ hexo g &amp;&amp; hexo s</code> <code>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
-<li>APlayer插件放置的位置不理想，也不生成自己想要的效果,详情参考<a href="https://yxyvpn.com/2020/04/15/pjax%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E5%88%9D%E5%A7%8B%E5%8C%96aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/" target="_blank" rel="noopener">pjax导致无法初始化aplayer音乐播放器</a>，主要问题如下：<ol>
-<li>Aplayer主页插件和歌单里面的切换有干扰</li>
-<li>Aplayer的<font color=#FF6600>Meting.js</font>由于没有CDN可以引用，只能下载<a href="https://github.com/metowolf/MetingJS/raw/v1.2/src/Meting.js" target="_blank" rel="noopener">MetingJS 1.2.0</a>源码，引用到本地的路径,来达到效果</li>
-</ol>
 </li>
-<li>博客主页没有预计的<font color=#FF6600>RSS</font>效果实现</li>
-<li>NexT主题版本升级迁移数据耗时良久</li>
-<li>中英文符号的切换导致博客页面没有预计效果</li>
-</ol>
+</ul></div><div class="tab-pane" id="text-3"><pre><code>If you want to embed images, this is how you do it:
+
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)</code></pre><p>If you want to embed images, this is how you do it:</p>
+<p><img src="https://octodex.github.com/images/yaktocat.png" alt="Image of Yaktocat"></p></div><div class="tab-pane" id="text-4"><pre><code>### Structured documents
+
+Sometimes it&apos;s useful to have different levels of headings to structure your documents. Start lines with a `#` to create headings.   Multiple `##` in a row denote smaller heading sizes.
+
+#### This is a third-tier heading
+
+You can use one `#` all the way up to `######` six for different heading sizes.
+
+If you&apos;d like to quote someone, use the &gt; character before the line:
+
+&gt; Coffee. The finest organic suspension ever devised... I beat the Borg with it.
+&gt; - Captain Janeway</code></pre><h3 id="Structured-documents"><a href="#Structured-documents" class="headerlink" title="Structured documents"></a>Structured documents</h3><p>Sometimes it’s useful to have different levels of headings to structure your documents. Start lines with a <code>#</code> to create headings. Multiple <code>##</code> in a row denote smaller heading sizes.</p>
+<h4 id="This-is-a-third-tier-heading"><a href="#This-is-a-third-tier-heading" class="headerlink" title="This is a third-tier heading"></a>This is a third-tier heading</h4><p>You can use one <code>#</code> all the way up to <code>######</code> six for different heading sizes.</p>
+<p>If you’d like to quote someone, use the &gt; character before the line:</p>
+<blockquote>
+<p>Coffee. The finest organic suspension ever devised… I beat the Borg with it.</p>
+<ul>
+<li>Captain Janeway</li>
+</ul>
+</blockquote></div><div class="tab-pane" id="text-5"><pre><code>There are many different ways to style code with GitHub&apos;s markdown. If you have inline code blocks, wrap them in backticks: `var example = true`.  If you&apos;ve got a longer block of code, you can indent with four spaces:
+
+if (isAwesome){
+  return true
+}
+
+GitHub also supports something called code fencing, which allows for multiple lines without indentation:
+
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;if (isAwesome)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  return true&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+And if you&apos;d like to use syntax highlighting, include the language:
+
+&lt;figure class=&quot;highlight javascript&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;keyword&quot;&gt;if&lt;/span&gt; (isAwesome)&amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  &lt;span class=&quot;keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;literal&quot;&gt;true&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</code></pre><p>There are many different ways to style code with GitHub’s markdown. If you have inline code blocks, wrap them in backticks: <code>var example = true</code>.  If you’ve got a longer block of code, you can indent with four spaces:</p>
+<pre><code>if (isAwesome){
+  return true
+}</code></pre><p>GitHub also supports something called code fencing, which allows for multiple lines without indentation:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">if (isAwesome)&#123;</span><br><span class="line">  return true</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>And if you’d like to use syntax highlighting, include the language:</p>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="keyword">if</span> (isAwesome)&#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></div><div class="tab-pane" id="text-6"><pre><code>GitHub supports many extras in Markdown that help you reference and link to people. If you ever want to direct a comment at someone, you can prefix their name with an @ symbol: Hey @kneath — love your sweater!
+
+But I have to admit, tasks lists are my favorite:
+
+- [x] This is a complete item
+- [ ] This is an incomplete item
+
+When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues. It works in Pull Requests, too!
+
+And, of course emoji!</code></pre><p>GitHub supports many extras in Markdown that help you reference and link to people. If you ever want to direct a comment at someone, you can prefix their name with an @ symbol: Hey @kneath — love your sweater!</p>
+<p>But I have to admit, tasks lists are my favorite:</p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> This is a complete item</li>
+<li><input disabled="" type="checkbox"> This is an incomplete item</li>
+</ul>
+<p>When you include a task list in the first comment of an Issue, you will see a helpful progress bar in your list of issues. It works in Pull Requests, too!</p>
+<p>And, of course emoji!</p></div></div></div>
+
+
+<h2 id="Syntax-guide"><a href="#Syntax-guide" class="headerlink" title="Syntax guide"></a>Syntax guide</h2><p>Here’s an overview of Markdown syntax that you can use anywhere on GitHub.com or in your own text files.</p>
+<h3 id="Headers"><a href="#Headers" class="headerlink" title="Headers"></a>Headers</h3><pre><code># This is an &lt;h1&gt; tag
+## This is an &lt;h2&gt; tag
+###### This is an &lt;h6&gt; tag    </code></pre><h3 id="Emphasis"><a href="#Emphasis" class="headerlink" title="Emphasis"></a>Emphasis</h3><pre><code>*This text will be italic*
+_This will also be italic_
+
+**This text will be bold**
+__This will also be bold__
+
+_You **can** combine them_</code></pre><h3 id="Lists"><a href="#Lists" class="headerlink" title="Lists"></a>Lists</h3><h4 id="Unordered"><a href="#Unordered" class="headerlink" title="Unordered"></a>Unordered</h4><pre><code>* Item 1
+* Item 2
+* Item 2a
+* Item 2b</code></pre><h4 id="Ordered"><a href="#Ordered" class="headerlink" title="Ordered"></a>Ordered</h4><pre><code>1. Item 1
+1. Item 2
+1. Item 3
+   1. Item 3a
+   1. Item 3b</code></pre><h3 id="Images"><a href="#Images" class="headerlink" title="Images"></a>Images</h3><pre><code>![GitHub Logo](/images/logo.png)
+Format: ![Alt Text](url)</code></pre><h3 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h3><pre><code>http://github.com - automatic!
+[GitHub](http://github.com)</code></pre><h3 id="Blockquotes"><a href="#Blockquotes" class="headerlink" title="Blockquotes"></a>Blockquotes</h3><pre><code>As Kanye West said:
+
+&gt; We&apos;re living the future so
+&gt; the present is our past.   </code></pre><h4 id="Inline-code"><a href="#Inline-code" class="headerlink" title="Inline code"></a>Inline code</h4><pre><code>I think you should use an
+`&lt;addr&gt;` element here instead.   </code></pre><h2 id="GitHub-Flavored-Markdown"><a href="#GitHub-Flavored-Markdown" class="headerlink" title="GitHub Flavored Markdown"></a>GitHub Flavored Markdown</h2><p>GitHub.com uses its own version of the Markdown syntax that provides an additional set of useful features, many of which make it easier to work with content on GitHub.com.</p>
+<p>Note that some features of GitHub Flavored Markdown are only available in the descriptions and comments of Issues and Pull Requests. These include @mentions as well as references to SHA-1 hashes, Issues, and Pull Requests. Task Lists are also available in Gist comments and in Gist Markdown files.</p>
+<h3 id="Syntax-highlighting"><a href="#Syntax-highlighting" class="headerlink" title="Syntax highlighting"></a>Syntax highlighting</h3><p>Here’s an example of how you can use syntax highlighting with GitHub Flavored <a href="https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax" target="_blank" rel="noopener">Markdown</a>:</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">javascript</span><br><span class="line">function fancyAlert(arg) &#123;</span><br><span class="line">  if(arg) &#123;</span><br><span class="line">    $.facebox(&#123;div:&#39;#foo&#39;&#125;)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>You can also simply indent your code by four spaces:</p>
+<pre><code>function fancyAlert(arg) {
+  if(arg) {
+    $.facebox({div:&apos;#foo&apos;})
+  }
+}</code></pre><p>Here’s an example of Python code without syntax highlighting:</p>
+<pre><code>def foo():
+    if not bar:
+        return True</code></pre><h3 id="Task-Lists"><a href="#Task-Lists" class="headerlink" title="Task Lists"></a>Task Lists</h3><pre><code>- [x] @mentions, #refs, [links](), **formatting**, and &lt;del&gt;tags&lt;/del&gt; supported
+- [x] list syntax required (any unordered or ordered list supported)
+- [x] this is a complete item
+- [ ] this is an incomplete item</code></pre><h3 id="Tables"><a href="#Tables" class="headerlink" title="Tables"></a>Tables</h3><p>You can create tables by assembling a list of words and dividing them with hyphens <code>-</code> (for the first row), and then separating each column with a pipe <code>|</code>:</p>
+<pre><code>First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column</code></pre><p>Would become:</p>
+<table>
+<thead>
+<tr>
+<th>First Header</th>
+<th>Second Header</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Content from cell 1</td>
+<td>Content from cell 2</td>
+</tr>
+<tr>
+<td>Content in the first column</td>
+<td>Content in the second column</td>
+</tr>
+</tbody></table>
+<h3 id="SHA-references"><a href="#SHA-references" class="headerlink" title="SHA references"></a>SHA references</h3><p>Any reference to a commit’s <a href="https://en.wikipedia.org/wiki/SHA-1" target="_blank" rel="noopener">SHA-1</a> hash will be automatically converted into a link to that    commit on GitHub.</p>
+<pre><code>16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
+mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac</code></pre><h3 id="Issue-references-within-a-repository"><a href="#Issue-references-within-a-repository" class="headerlink" title="Issue references within a repository"></a>Issue references within a repository</h3><p>Any number that refers to an Issue or Pull Request will be automatically converted into a link.</p>
+<pre><code>#1
+mojombo#1
+mojombo/github-flavored-markdown#1</code></pre><h3 id="Username-mentions"><a href="#Username-mentions" class="headerlink" title="Username @mentions"></a>Username @mentions</h3><p>Typing an <code>@</code> symbol, followed by a username, will notify that person to come and view the comment. This is called an “@mention”, because you’re mentioning the individual. You can also @mention teams within an organization.</p>
+<h3 id="Automatic-linking-for-URLs"><a href="#Automatic-linking-for-URLs" class="headerlink" title="Automatic linking for URLs"></a>Automatic linking for URLs</h3><p>Any URL (like <code>http://www.github.com/</code>) will be automatically converted into a clickable link.</p>
+<h3 id="Strikethrough"><a href="#Strikethrough" class="headerlink" title="Strikethrough"></a>Strikethrough</h3><p>Any word wrapped with two tildes (like <code>~~this~~</code>) will appear crossed out.</p>
+<h3 id="Emoji"><a href="#Emoji" class="headerlink" title="Emoji"></a>Emoji</h3><p>GitHub supports <a href="https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#using-emoji" target="_blank" rel="noopener">emoji</a>!</p>
+<p>To see a list of every image we support, check out the <a href="https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md" target="_blank" rel="noopener">Emoji Cheat Sheet</a>.</p>
+<h2 id="结语："><a href="#结语：" class="headerlink" title="结语："></a>结语：</h2><p>Markdown的练习进程很顺利，把GitHub的文章用来练习，顺便学习下hexo下用Markdown 的选项卡.好在一些语法上的疑惑都解决了</p>
+<p>引用：<a href="https://guides.github.com/features/mastering-markdown/#syntax" target="_blank" rel="noopener">Mastering Markdown</a><br>参考：<a href="https://fanandjiu.com/Hexo%E5%86%99%E4%BD%9C%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/" target="_blank" rel="noopener">Hexo写作语法指南</a></p>
 <hr>
-<p>以上这些问题对一个刚刚接触这方面的我来说，有问题只能使劲gang <a href="https://www.google.com/" target="_blank" rel="noopener">Google</a>。好在一切都已经进入了正轨，接下来就开始享受拥有博客的快乐时光。感谢自己不抛弃不放弃的精神！</p>
-<p>可以听听<a href="https://kugougo.github.io/playlist/">我的音乐</a></p>
 ]]></content>
       <categories>
-        <category>遇见hexo</category>
+        <category>技能</category>
       </categories>
       <tags>
-        <tag>hexo基础</tag>
+        <tag>Markdown</tag>
       </tags>
   </entry>
   <entry>
@@ -80,6 +222,59 @@
       </categories>
       <tags>
         <tag>蹉跎岁月</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一次搭建hexo博客的历程</title>
+    <url>/2020/05/11/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8E%86%E7%A8%8B/</url>
+    <content><![CDATA[<blockquote>
+<p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
+</blockquote>
+<p><img src="https://images.pexels.com/photos/3873378/pexels-photo-3873378.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></p>
+<a id="more"></a>
+<p>经过几天初步探索与实践，一路摸爬滚打，开始有了现在的效果。今天写下第一篇小记来记录下。</p>
+<h4 id="目前初步完成了以下"><a href="#目前初步完成了以下" class="headerlink" title="目前初步完成了以下:"></a>目前初步完成了以下:</h4><ul>
+<li>完成了博客的初步搭建，历时两天</li>
+<li>完成了部分个性化的内容，历时五天<ul>
+<li>通过<strong>Aplayer</strong>设置歌单</li>
+<li>添加博客背景</li>
+<li>添加了可爱的看板娘</li>
+<li>设置了博客运行时间</li>
+<li>添加了评论系统  </li>
+<li>添加了个性back2top</li>
+<li>添加了今日诗词</li>
+<li>添加了文末声明</li>
+<li>添加了博客数据统计</li>
+<li>更新了文末标签</li>
+</ul>
+</li>
+</ul>
+<h4 id="目前在计划中的事情："><a href="#目前在计划中的事情：" class="headerlink" title="目前在计划中的事情："></a>目前在计划中的事情：</h4><ul>
+<li><input checked="" disabled="" type="checkbox"> 找到一个免费的图床为博客后续做准备</li>
+<li><input checked="" disabled="" type="checkbox"> 将<strong>Markdown</strong>用于写写日常来练习</li>
+<li><input checked="" disabled="" type="checkbox"> 继续打磨我的博客</li>
+<li><input disabled="" type="checkbox"> 好好学习，天天向上  </li>
+</ul>
+<h4 id="遇到的些许问题"><a href="#遇到的些许问题" class="headerlink" title="遇到的些许问题:"></a>遇到的些许问题:</h4><ol>
+<li>next主题设置并不生效不停的采取<code>$ hexo clean</code> <code>$ hexo g &amp;&amp; hexo s</code> <code>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
+<li>APlayer插件放置的位置不理想，也不生成自己想要的效果,详情参考<a href="https://yxyvpn.com/2020/04/15/pjax%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E5%88%9D%E5%A7%8B%E5%8C%96aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/" target="_blank" rel="noopener">pjax导致无法初始化aplayer音乐播放器</a>，主要问题如下：<ol>
+<li>Aplayer主页插件和歌单里面的切换有干扰</li>
+<li>Aplayer的<font color=#FF6600>Meting.js</font>由于没有CDN可以引用，只能下载<a href="https://github.com/metowolf/MetingJS/raw/v1.2/src/Meting.js" target="_blank" rel="noopener">MetingJS 1.2.0</a>源码，引用到本地的路径,来达到效果</li>
+</ol>
+</li>
+<li>博客主页没有预计的<font color=#FF6600>RSS</font>效果实现</li>
+<li>NexT主题版本升级迁移数据耗时良久</li>
+<li>中英文符号的切换导致博客页面没有预计效果</li>
+</ol>
+<hr>
+<p>以上这些问题对一个刚刚接触这方面的我来说，有问题只能使劲gang <a href="https://www.google.com/" target="_blank" rel="noopener">Google</a>。好在一切都已经进入了正轨，接下来就开始享受拥有博客的快乐时光。感谢自己不抛弃不放弃的精神！</p>
+<p>可以听听<a href="https://kugougo.github.io/playlist/">我的音乐</a></p>
+]]></content>
+      <categories>
+        <category>遇见hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo基础</tag>
       </tags>
   </entry>
 </search>
