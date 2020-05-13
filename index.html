@@ -49,8 +49,33 @@
 
   <title>孤岛鲸</title>
   
+    <script>
+      function sendPageView() {
+        if (CONFIG.hostname !== location.hostname) return;
+        var uid = localStorage.getItem('uid') || (Math.random() + '.' + Math.random());
+        localStorage.setItem('uid', uid);
+        navigator.sendBeacon('https://www.google-analytics.com/collect', new URLSearchParams({
+          v  : 1,
+          tid: 'UA-165257872-1',
+          cid: uid,
+          t  : 'pageview',
+          dp : encodeURIComponent(location.pathname)
+        }));
+      }
+      document.addEventListener('pjax:complete', sendPageView);
+      sendPageView();
+    </script>
 
 
+  <script data-pjax>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?58ac660e3383fd4f6ae51a0f47deca90";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -253,7 +278,21 @@
     </a>
   </span>
   
-  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>8.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>8 分钟</span>
+            </span>
 
         </div>
       </header>
@@ -314,10 +353,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-05-12 22:42:03 / 修改时间：23:58:14" itemprop="dateCreated datePublished" datetime="2020-05-12T22:42:03+08:00">2020-05-12</time>
+              <time title="创建时间：2020-05-12 22:42:03" itemprop="dateCreated datePublished" datetime="2020-05-12T22:42:03+08:00">2020-05-12</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-05-13 17:32:01" itemprop="dateModified" datetime="2020-05-13T17:32:01+08:00">2020-05-13</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -349,7 +394,21 @@
     </a>
   </span>
   
-  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>578</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
 
         </div>
       </header>
@@ -419,7 +478,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-05-13 13:22:00" itemprop="dateModified" datetime="2020-05-13T13:22:00+08:00">2020-05-13</time>
+                <time title="修改时间：2020-05-13 17:32:13" itemprop="dateModified" datetime="2020-05-13T17:32:13+08:00">2020-05-13</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -452,7 +511,21 @@
     </a>
   </span>
   
-  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>688</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>1 分钟</span>
+            </span>
 
         </div>
       </header>
@@ -466,7 +539,7 @@
           <blockquote>
 <p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
 </blockquote>
-<p><img src="https://images.pexels.com/photos/3873378/pexels-photo-3873378.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></p>
+<img src="https://images.pexels.com/photos/3873378/pexels-photo-3873378.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" clss="full-image" />
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/05/11/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%9A%84%E5%8E%86%E7%A8%8B/#more" rel="contents">
@@ -659,6 +732,16 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">一只柠檬鲸</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">10k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">9 分钟</span>
 </div><span id="sitetime"></span>
 <script language=javascript>
   function siteTime(){
