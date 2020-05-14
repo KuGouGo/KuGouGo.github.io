@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kugougo.github.io/"/>
-  <updated>2020-05-13T06:29:23.529Z</updated>
+  <updated>2020-05-14T10:06:21.943Z</updated>
   <id>https://kugougo.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>将Hexo博客备份到Github</title>
+    <link href="https://kugougo.github.io/2020/05/14/%E5%B0%86Hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%E5%88%B0Github/"/>
+    <id>https://kugougo.github.io/2020/05/14/%E5%B0%86Hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%E5%88%B0Github/</id>
+    <published>2020-05-14T08:32:35.000Z</published>
+    <updated>2020-05-14T10:06:21.943Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;前段时间折腾了下Hexo的next 5.0+和next 7.8+的版本，具体体验上很不错，由于自己的原因，老是忘记备份，放在文件夹又不见得回去把它翻出来，辛辛苦苦写的文章不能就这样没了，于是想到Hexo博客可不可以备份到Github呢？&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://wallroom.io/img/3840x2160/bg-4186633.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="遇见hexo" scheme="https://kugougo.github.io/categories/%E9%81%87%E8%A7%81hexo/"/>
+    
+      <category term="Github" scheme="https://kugougo.github.io/categories/%E9%81%87%E8%A7%81hexo/Github/"/>
+    
+    
+      <category term="hexo 基础" scheme="https://kugougo.github.io/tags/hexo-%E5%9F%BA%E7%A1%80/"/>
+    
+      <category term="备份" scheme="https://kugougo.github.io/tags/%E5%A4%87%E4%BB%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>Mastering Markdown</title>
