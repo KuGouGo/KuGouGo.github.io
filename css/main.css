@@ -1526,7 +1526,7 @@ pre code {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b8d0c6;
+  background: #87bb04;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1769,7 +1769,7 @@ pre code {
   width: 100%;
 }
 .with-love {
-  color: #ff0000;
+  color: #909497;
   display: inline-block;
   margin: 0 5px;
 }
@@ -3230,8 +3230,68 @@ ul.breadcrumb li + li:last-child {
 /*background: url(../images/scrollbar_arrow.png) no-repeat 0 0;*/
 /*可以添加滚动条样式*/
 }
-#jrsc {
-  font-style: italic;
-  font-size: initial;
-  color: #191970;
+著作权归作者所有。,
+商业转载请联系作者获得授权，非商业转载请注明出处。,
+作者：云开,
+链接：https:,
+来源：TheYun云开,
+.poem-wrap {
+  position: relative;
+  width: 730px;
+  max-width: 80%;
+  border: 2px solid #797979;
+  border-top: none;
+  text-align: center;
+  margin: 80px auto;
+}
+.poem-wrap h1 {
+  font-size: 30px;
+  position: relative;
+  margin-top: -20px;
+  display: inline-block;
+  letter-spacing: 4px;
+  color: #797979;
+}
+.poem-wrap p {
+  width: 70%;
+  margin: auto;
+  line-height: 30px;
+  color: #797979;
+}
+.poem-wrap p#poem {
+  font-size: 25px;
+}
+.poem-wrap p#info {
+  font-size: 15px;
+  margin: 15px auto;
+}
+.poem-border {
+  position: absolute;
+  height: 2px;
+  width: 27%;
+  background-color: #797979;
+}
+.poem-right {
+  right: 0;
+}
+.poem-left {
+  left: 0;
+}
+@media (max-width: 685px) {
+  .poem-border {
+    width: 18%;
+  }
+}
+@media (max-width: 500px) {
+  .poem-wrap {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    border-top: 2px solid #797979;
+  }
+  .poem-wrap h1 {
+    margin: 20px 6px;
+  }
+  .poem-border {
+    display: none;
+  }
 }

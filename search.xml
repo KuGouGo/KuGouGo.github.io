@@ -1,139 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>将Hexo博客备份到Github</title>
-    <url>/2020/05/14/%E5%B0%86Hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%E5%88%B0Github/</url>
-    <content><![CDATA[<p>前段时间折腾了下Hexo的next 5.0+和next 7.8+的版本，具体体验上很不错，由于自己的原因，老是忘记备份，放在文件夹又不见得回去把它翻出来，辛辛苦苦写的文章不能就这样没了，于是想到Hexo博客可不可以备份到Github呢？</p>
-<p><img src="https://wallroom.io/img/1920x1200/thumb/bg-38d4bcd.jpg" alt=""></p>
-<a id="more"></a>
-<p>搜来搜去也就两种方法</p>
-<h2 id="hexo-git-backup插件"><a href="#hexo-git-backup插件" class="headerlink" title="hexo-git-backup插件"></a>hexo-git-backup插件</h2><p>hexo-git-backup插件在Hexo官网的插件里是搜不到的，这个插件发布在了<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvbmV5Y29kZS9oZXhvLWdpdC1iYWNrdXA=">GitHub<i class="fa fa-external-link-alt"></i></span>上，关于安装使用官方也给了很简洁易懂的说明文档。</p>
-<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>如果你的Hexo版本是2.x.x（查看Hexo版本可使用命令：<code>hexo version</code>）在终端中使用如下命令安装：<br><code>$ npm install hexo-git-backup@0.0.91 --save</code><br>如果你的Hexo版本是3.x.x+则使用如下命令安装:<br><code>$ npm install hexo-git-backup --save</code></p>
-<h3 id="插件的更新"><a href="#插件的更新" class="headerlink" title="插件的更新"></a>插件的更新</h3><p>如果是通过<code>$ npm install hexo-git-backup --save</code>命令安装的那么先要删除掉旧版本再升级，具体命令如下：<br><code>$ npm remove hexo-git-backup</code><br><code>$ npm install hexo-git-backup --save</code></p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>在hexo的_config.yml里配置这个插件：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">backup:</span><br><span class="line">   type: git</span><br><span class="line">   theme: next,landscape</span><br><span class="line">   message: Back up my blog</span><br><span class="line">   repository:</span><br><span class="line">      github: git@github.com:xxx&#x2F;xxx.git,branchName</span><br><span class="line">      gitcafe: git@github.com:xxx&#x2F;xxx.git,branchName</span><br></pre></td></tr></table></figure>
-<p>详细参数解释：</p>
-<ul>
-<li>theme：你要备份的主题名称 <code>theme name,theme name</code></li>
-<li>message：自定义提交信息</li>
-<li>repository：仓库名，注意仓库地址后面要添加一个分支名，比如我就创建了一个Hexo backup分支</li>
-</ul>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>从现在开始使用以下命令你就可以备份整个博客了！<br><code>$ hexo backup</code><br>或者使用以下简写命令也可以：<br><code>$ hexo b</code></p>
-<h3 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a>注意！</h3><h2 id="如果你按照上面的备份步骤备份了主题，那目录中的themes-theme-name-git这个文件就会被移除掉哦。"><a href="#如果你按照上面的备份步骤备份了主题，那目录中的themes-theme-name-git这个文件就会被移除掉哦。" class="headerlink" title="如果你按照上面的备份步骤备份了主题，那目录中的themes/theme name/.git这个文件就会被移除掉哦。"></a><strong>如果你按照上面的备份步骤备份了主题，那目录中的themes/theme name/.git这个文件就会被移除掉哦。</strong></h2><h2 id="在Github-io上建立博客新分支"><a href="#在Github-io上建立博客新分支" class="headerlink" title="在Github.io上建立博客新分支"></a>在Github.io上建立博客新分支</h2><p>###创建博客仓库新的分支<br>在Github.io上建立博客时已经开了一个新仓库了，如果再开另一个仓库存放源代码有点浪费，因此采用建立新分支的方法备份博客。不会建分支可以参考<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poL3YyL0dpdC0lRTUlODglODYlRTYlOTQlQUYtJUU1JTg4JTg2JUU2JTk0JUFGJUU3JTlBJTg0JUU2JTk2JUIwJUU1JUJCJUJBJUU0JUI4JThFJUU1JTkwJTg4JUU1JUI5JUI2">Git 分支 - 分支的新建与合并<i class="fa fa-external-link-alt"></i></span>.博客都已经建立好了，那什么时候创建备份分支都是可以的。</p>
-<h4 id="针对博客已经搭建并发布过文章的"><a href="#针对博客已经搭建并发布过文章的" class="headerlink" title="针对博客已经搭建并发布过文章的"></a>针对博客已经搭建并发布过文章的</h4><ol>
-<li><p>在你的博客仓库创建一个分支Hexo（这个命名随意，我这里以Hexo为参考）；</p>
-</li>
-<li><p>设置Hexo为默认分支（不知道怎么设的可以百度）；</p>
-</li>
-</ol>
-<h3 id="将博客仓库clone至本地"><a href="#将博客仓库clone至本地" class="headerlink" title="将博客仓库clone至本地"></a>将博客仓库clone至本地</h3><p>将之前的Hexo文件夹中的:<code>_config.yml</code>，<code>themes/</code>，<code>source</code>，<code>scffolds/</code>，<code>package.json</code>，.<code>gitignore</code>复制到你克隆下来的仓库文件夹，即Username.github.io；（Username是你自己的用户名）</p>
-<h3 id="删除-git"><a href="#删除-git" class="headerlink" title="删除.git"></a>删除.git</h3><p>将themes/next/(我用的是NexT主题)中的.git/删除，否则后面无法将主题文件夹push；</p>
-<h3 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h3><ol>
-<li>在Username.github.io文件夹下面执行<code>npm install</code>，<code>npm install hexo-deployer-git</code>(这里可以看看分支是不是显示为Hexo)。</li>
-<li>同界面执行<code>git add .</code>、<code>git commit -m &quot;&quot;</code>、<code>git push origin hexo</code>来提交hexo网站源文件。</li>
-<li>执行hexo g -d生成静态网页部署至Github上</li>
-</ol>
-<p>这样一来，Username.github.io仓库就有master分支和hexo分支，分别保存静态网页和源文件。</p>
-<h3 id="后续运行"><a href="#后续运行" class="headerlink" title="后续运行"></a>后续运行</h3><p>在本地对博客修改（包括修改主题样式、发布新文章等）后：</p>
-<ol>
-<li>依次执行<code>git add .</code>、<code>git commit -m &quot;&quot;</code>、<code>git push origin hexo</code>来提交hexo网站源文件；</li>
-<li>执行<code>hexo g -d</code>生成静态网页部署至Github上。<br>即重复运行命令的2-3步骤，以上两步没有严格的顺序。</li>
-</ol>
-<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p><strong>感谢：</strong><br>简书：  <span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC81N2I1YTM4NGYyMzQ=">Hexo博客备份<i class="fa fa-external-link-alt"></i></span><br>Github: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvbmV5Y29kZS9oZXhvLWdpdC1iYWNrdXA=">hexo-git-backup<i class="fa fa-external-link-alt"></i></span></p>
-<hr>
-]]></content>
-      <categories>
-        <category>遇见hexo</category>
-        <category>Github</category>
-      </categories>
-      <tags>
-        <tag>hexo基础</tag>
-        <tag>备份</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>赋闲的一天</title>
-    <url>/2020/05/12/%E8%B5%8B%E9%97%B2%E7%9A%84%E4%B8%80%E5%A4%A9/</url>
-    <content><![CDATA[<p>毕业报告完成的匆匆忙忙,没有一丝急迫感,貌似也找不到什么特别的感觉,闲来无事记上一记.</p>
-<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0b9df28.jpg" alt=""></p>
-<a id="more"></a>
-<h2 id="又来折腾主题了"><a href="#又来折腾主题了" class="headerlink" title="又来折腾主题了"></a>又来折腾主题了</h2><p>闲下来又把hexo从next换到butterfly,花了半天时间布置好了,还是觉得next简洁明了,适合我这单纯聊聊日常的人.折腾的太花里胡哨也让自己审美疲劳,于是又把报错的next搬了回来,迁移了此前发的一篇post,终归还是回来了!去掉了一些花里胡哨的操作又开始上路了.</p>
-<h3 id="主要区别"><a href="#主要区别" class="headerlink" title="主要区别:"></a>主要区别:</h3><ol>
-<li>butterfly:视觉冲击很强</li>
-<li>next:简单大气,DIY性更高</li>
-</ol>
-<h2 id="Microsoft-Edge体验"><a href="#Microsoft-Edge体验" class="headerlink" title="Microsoft Edge体验"></a>Microsoft Edge体验</h2><p>刚好在调试博客的时候chrome出问题了,估计是昨天调试butterfly的时候引用<span class="exturl" data-url="aHR0cHM6Ly93d3cucGV4ZWxzLmNvbS96aC1jbi8=">Pexels<i class="fa fa-external-link-alt"></i></span>的4k超清背景图导致缓存一时不能自动清理,只会<code>CTRL+SHIFT+R</code>勉强操作一波,把自己给憨到了.随之打开关在小黑屋的Microsoft Edge,刚好提示有全新内核的.便想着体验体验   </p>
-<h3 id="新特性新体验"><a href="#新特性新体验" class="headerlink" title="新特性新体验"></a>新特性新体验</h3><ol>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pbWctcHJvZC1jbXMtcnQtbWljcm9zb2Z0LWNvbS5ha2FtYWl6ZWQubmV0L2Ntcy9hcGkvYW0vaW1hZ2VGaWxlRGF0YS9SRTR1Yk1Q">新图标<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pbWctcHJvZC1jbXMtcnQtbWljcm9zb2Z0LWNvbS5ha2FtYWl6ZWQubmV0L2Ntcy9hcGkvYW0vaW1hZ2VGaWxlRGF0YS9SRTR1NDZN">非常漂亮的界面<i class="fa fa-external-link-alt"></i></span>  </li>
-<li>全新的速度</li>
-<li>更高的生产力量</li>
-</ol>
-<p>不得不说体验下来还是很舒服的,插件和书签还有历史记录全部从chrome搬了过来,同步到位的感觉挺舒服的,毕竟也是有chrome的高贵血统了.chrome确实也不如它漂亮,但是加载起网页来还是有蛮多不足的,遂又把chrome固定到了任务栏里做常客.</p>
-<h2 id="B-F-F"><a href="#B-F-F" class="headerlink" title="B F F"></a>B F F</h2><p>这一来二去折腾的我还挺享受这种感觉的,毕竟闲着也是闲着,干嘛不找点东西折腾下图个打发时间.</p>
-<hr>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>蹉跎岁月</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一次搭建hexo博客</title>
-    <url>/2020/05/11/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<blockquote>
-<p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
-</blockquote>
-<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0ea4426.jpg" alt=""></p>
-<a id="more"></a>
-<p>经过几天初步探索与实践，一路摸爬滚打，开始有了现在的效果。今天写下第一篇小记来记录下。</p>
-<h4 id="目前初步完成了以下"><a href="#目前初步完成了以下" class="headerlink" title="目前初步完成了以下:"></a>目前初步完成了以下:</h4><ul>
-<li>完成了博客的初步搭建，历时两天</li>
-<li>完成了部分个性化的内容，历时五天<ul>
-<li>通过<strong>Aplayer</strong>设置歌单</li>
-<li>添加博客背景</li>
-<li>添加了可爱的看板娘</li>
-<li>设置了博客运行时间</li>
-<li>添加了评论系统  </li>
-<li>添加了个性back2top</li>
-<li>添加了今日诗词</li>
-<li>添加了文末声明</li>
-<li>添加了博客数据统计</li>
-<li>更新了文末标签</li>
-</ul>
-</li>
-</ul>
-<h4 id="目前在计划中的事情："><a href="#目前在计划中的事情：" class="headerlink" title="目前在计划中的事情："></a>目前在计划中的事情：</h4><ul>
-<li><input checked="" disabled="" type="checkbox"> 找到一个免费的图床为博客后续做准备</li>
-<li><input checked="" disabled="" type="checkbox"> 将<strong>Markdown</strong>用于写写日常来练习</li>
-<li><input checked="" disabled="" type="checkbox"> 继续打磨我的博客</li>
-<li><input disabled="" type="checkbox"> 好好学习，天天向上  </li>
-</ul>
-<h4 id="遇到的些许问题"><a href="#遇到的些许问题" class="headerlink" title="遇到的些许问题:"></a>遇到的些许问题:</h4><ol>
-<li>next主题设置并不生效不停的采取<code>$ hexo clean</code> <code>$ hexo g &amp;&amp; hexo s</code> <code>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
-<li>APlayer插件放置的位置不理想，也不生成自己想要的效果,详情参考<span class="exturl" data-url="aHR0cHM6Ly95eHl2cG4uY29tLzIwMjAvMDQvMTUvcGpheCVFNSVBRiVCQyVFOCU4NyVCNCVFNiU5NyVBMCVFNiVCMyU5NSVFNSU4OCU5RCVFNSVBNyU4QiVFNSU4QyU5NmFwbGF5ZXIlRTklOUYlQjMlRTQlQjklOTAlRTYlOTIlQUQlRTYlOTQlQkUlRTUlOTklQTgv">pjax导致无法初始化aplayer音乐播放器<i class="fa fa-external-link-alt"></i></span>，主要问题如下：<ol>
-<li>Aplayer主页插件和歌单里面的切换有干扰</li>
-<li>Aplayer的<font color=#FF6600>Meting.js</font>由于没有CDN可以引用，只能下载<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21ldG93b2xmL01ldGluZ0pTL3Jhdy92MS4yL3NyYy9NZXRpbmcuanM=">MetingJS 1.2.0<i class="fa fa-external-link-alt"></i></span>源码，引用到本地的路径,来达到效果</li>
-</ol>
-</li>
-<li>博客主页没有预计的<font color=#FF6600>RSS</font>效果实现</li>
-<li>NexT主题版本升级迁移数据耗时良久</li>
-<li>中英文符号的切换导致博客页面没有预计效果</li>
-</ol>
-<hr>
-<p>以上这些问题对一个刚刚接触这方面的我来说，有问题只能使劲gang <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8=">Google<i class="fa fa-external-link-alt"></i></span>。好在一切都已经进入了正轨，接下来就开始享受拥有博客的快乐时光。感谢自己不抛弃不放弃的精神！</p>
-<p>可以听听<a href="https://kugougo.github.io/playlist/">我的音乐</a></p>
-]]></content>
-      <categories>
-        <category>遇见hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo基础</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mastering Markdown</title>
     <url>/2020/05/13/Mastering-Markdown/</url>
     <content><![CDATA[<p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p>
@@ -327,6 +194,139 @@ mojombo/github-flavored-markdown#1</code></pre><h3 id="Username-mentions"><a hre
       </categories>
       <tags>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>赋闲的一天</title>
+    <url>/2020/05/12/%E8%B5%8B%E9%97%B2%E7%9A%84%E4%B8%80%E5%A4%A9/</url>
+    <content><![CDATA[<p>毕业报告完成的匆匆忙忙,没有一丝急迫感,貌似也找不到什么特别的感觉,闲来无事记上一记.</p>
+<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0b9df28.jpg" alt=""></p>
+<a id="more"></a>
+<h2 id="又来折腾主题了"><a href="#又来折腾主题了" class="headerlink" title="又来折腾主题了"></a>又来折腾主题了</h2><p>闲下来又把hexo从next换到butterfly,花了半天时间布置好了,还是觉得next简洁明了,适合我这单纯聊聊日常的人.折腾的太花里胡哨也让自己审美疲劳,于是又把报错的next搬了回来,迁移了此前发的一篇post,终归还是回来了!去掉了一些花里胡哨的操作又开始上路了.</p>
+<h3 id="主要区别"><a href="#主要区别" class="headerlink" title="主要区别:"></a>主要区别:</h3><ol>
+<li>butterfly:视觉冲击很强</li>
+<li>next:简单大气,DIY性更高</li>
+</ol>
+<h2 id="Microsoft-Edge体验"><a href="#Microsoft-Edge体验" class="headerlink" title="Microsoft Edge体验"></a>Microsoft Edge体验</h2><p>刚好在调试博客的时候chrome出问题了,估计是昨天调试butterfly的时候引用<span class="exturl" data-url="aHR0cHM6Ly93d3cucGV4ZWxzLmNvbS96aC1jbi8=">Pexels<i class="fa fa-external-link-alt"></i></span>的4k超清背景图导致缓存一时不能自动清理,只会<code>CTRL+SHIFT+R</code>勉强操作一波,把自己给憨到了.随之打开关在小黑屋的Microsoft Edge,刚好提示有全新内核的.便想着体验体验   </p>
+<h3 id="新特性新体验"><a href="#新特性新体验" class="headerlink" title="新特性新体验"></a>新特性新体验</h3><ol>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pbWctcHJvZC1jbXMtcnQtbWljcm9zb2Z0LWNvbS5ha2FtYWl6ZWQubmV0L2Ntcy9hcGkvYW0vaW1hZ2VGaWxlRGF0YS9SRTR1Yk1Q">新图标<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pbWctcHJvZC1jbXMtcnQtbWljcm9zb2Z0LWNvbS5ha2FtYWl6ZWQubmV0L2Ntcy9hcGkvYW0vaW1hZ2VGaWxlRGF0YS9SRTR1NDZN">非常漂亮的界面<i class="fa fa-external-link-alt"></i></span>  </li>
+<li>全新的速度</li>
+<li>更高的生产力量</li>
+</ol>
+<p>不得不说体验下来还是很舒服的,插件和书签还有历史记录全部从chrome搬了过来,同步到位的感觉挺舒服的,毕竟也是有chrome的高贵血统了.chrome确实也不如它漂亮,但是加载起网页来还是有蛮多不足的,遂又把chrome固定到了任务栏里做常客.</p>
+<h2 id="B-F-F"><a href="#B-F-F" class="headerlink" title="B F F"></a>B F F</h2><p>这一来二去折腾的我还挺享受这种感觉的,毕竟闲着也是闲着,干嘛不找点东西折腾下图个打发时间.</p>
+<hr>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>蹉跎岁月</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>第一次搭建hexo博客</title>
+    <url>/2020/05/11/%E7%AC%AC%E4%B8%80%E6%AC%A1%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<blockquote>
+<p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
+</blockquote>
+<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0ea4426.jpg" alt=""></p>
+<a id="more"></a>
+<p>经过几天初步探索与实践，一路摸爬滚打，开始有了现在的效果。今天写下第一篇小记来记录下。</p>
+<h4 id="目前初步完成了以下"><a href="#目前初步完成了以下" class="headerlink" title="目前初步完成了以下:"></a>目前初步完成了以下:</h4><ul>
+<li>完成了博客的初步搭建，历时两天</li>
+<li>完成了部分个性化的内容，历时五天<ul>
+<li>通过<strong>Aplayer</strong>设置歌单</li>
+<li>添加博客背景</li>
+<li>添加了可爱的看板娘</li>
+<li>设置了博客运行时间</li>
+<li>添加了评论系统  </li>
+<li>添加了个性back2top</li>
+<li>添加了今日诗词</li>
+<li>添加了文末声明</li>
+<li>添加了博客数据统计</li>
+<li>更新了文末标签</li>
+</ul>
+</li>
+</ul>
+<h4 id="目前在计划中的事情："><a href="#目前在计划中的事情：" class="headerlink" title="目前在计划中的事情："></a>目前在计划中的事情：</h4><ul>
+<li><input checked="" disabled="" type="checkbox"> 找到一个免费的图床为博客后续做准备</li>
+<li><input checked="" disabled="" type="checkbox"> 将<strong>Markdown</strong>用于写写日常来练习</li>
+<li><input checked="" disabled="" type="checkbox"> 继续打磨我的博客</li>
+<li><input disabled="" type="checkbox"> 好好学习，天天向上  </li>
+</ul>
+<h4 id="遇到的些许问题"><a href="#遇到的些许问题" class="headerlink" title="遇到的些许问题:"></a>遇到的些许问题:</h4><ol>
+<li>next主题设置并不生效不停的采取<code>$ hexo clean</code> <code>$ hexo g &amp;&amp; hexo s</code> <code>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
+<li>APlayer插件放置的位置不理想，也不生成自己想要的效果,详情参考<span class="exturl" data-url="aHR0cHM6Ly95eHl2cG4uY29tLzIwMjAvMDQvMTUvcGpheCVFNSVBRiVCQyVFOCU4NyVCNCVFNiU5NyVBMCVFNiVCMyU5NSVFNSU4OCU5RCVFNSVBNyU4QiVFNSU4QyU5NmFwbGF5ZXIlRTklOUYlQjMlRTQlQjklOTAlRTYlOTIlQUQlRTYlOTQlQkUlRTUlOTklQTgv">pjax导致无法初始化aplayer音乐播放器<i class="fa fa-external-link-alt"></i></span>，主要问题如下：<ol>
+<li>Aplayer主页插件和歌单里面的切换有干扰</li>
+<li>Aplayer的<font color=#FF6600>Meting.js</font>由于没有CDN可以引用，只能下载<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21ldG93b2xmL01ldGluZ0pTL3Jhdy92MS4yL3NyYy9NZXRpbmcuanM=">MetingJS 1.2.0<i class="fa fa-external-link-alt"></i></span>源码，引用到本地的路径,来达到效果</li>
+</ol>
+</li>
+<li>博客主页没有预计的<font color=#FF6600>RSS</font>效果实现</li>
+<li>NexT主题版本升级迁移数据耗时良久</li>
+<li>中英文符号的切换导致博客页面没有预计效果</li>
+</ol>
+<hr>
+<p>以上这些问题对一个刚刚接触这方面的我来说，有问题只能使劲gang <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8=">Google<i class="fa fa-external-link-alt"></i></span>。好在一切都已经进入了正轨，接下来就开始享受拥有博客的快乐时光。感谢自己不抛弃不放弃的精神！</p>
+<p>可以听听<a href="https://kugougo.github.io/playlist/">我的音乐</a></p>
+]]></content>
+      <categories>
+        <category>遇见hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo基础</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>将Hexo博客备份到Github</title>
+    <url>/2020/05/14/%E5%B0%86Hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%E5%88%B0Github/</url>
+    <content><![CDATA[<p>前段时间折腾了下Hexo的next 5.0+和next 7.8+的版本，具体体验上很不错，由于自己的原因，老是忘记备份，放在文件夹又不见得回去把它翻出来，辛辛苦苦写的文章不能就这样没了，于是想到Hexo博客可不可以备份到Github呢？</p>
+<p><img src="https://wallroom.io/img/1920x1200/thumb/bg-38d4bcd.jpg" alt=""></p>
+<a id="more"></a>
+<p>搜来搜去也就两种方法</p>
+<h2 id="hexo-git-backup插件"><a href="#hexo-git-backup插件" class="headerlink" title="hexo-git-backup插件"></a>hexo-git-backup插件</h2><p>hexo-git-backup插件在Hexo官网的插件里是搜不到的，这个插件发布在了<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvbmV5Y29kZS9oZXhvLWdpdC1iYWNrdXA=">GitHub<i class="fa fa-external-link-alt"></i></span>上，关于安装使用官方也给了很简洁易懂的说明文档。</p>
+<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>如果你的Hexo版本是2.x.x（查看Hexo版本可使用命令：<code>hexo version</code>）在终端中使用如下命令安装：<br><code>$ npm install hexo-git-backup@0.0.91 --save</code><br>如果你的Hexo版本是3.x.x+则使用如下命令安装:<br><code>$ npm install hexo-git-backup --save</code></p>
+<h3 id="插件的更新"><a href="#插件的更新" class="headerlink" title="插件的更新"></a>插件的更新</h3><p>如果是通过<code>$ npm install hexo-git-backup --save</code>命令安装的那么先要删除掉旧版本再升级，具体命令如下：<br><code>$ npm remove hexo-git-backup</code><br><code>$ npm install hexo-git-backup --save</code></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>在hexo的_config.yml里配置这个插件：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">backup:</span><br><span class="line">   type: git</span><br><span class="line">   theme: next,landscape</span><br><span class="line">   message: Back up my blog</span><br><span class="line">   repository:</span><br><span class="line">      github: git@github.com:xxx&#x2F;xxx.git,branchName</span><br><span class="line">      gitcafe: git@github.com:xxx&#x2F;xxx.git,branchName</span><br></pre></td></tr></table></figure>
+<p>详细参数解释：</p>
+<ul>
+<li>theme：你要备份的主题名称 <code>theme name,theme name</code></li>
+<li>message：自定义提交信息</li>
+<li>repository：仓库名，注意仓库地址后面要添加一个分支名，比如我就创建了一个Hexo backup分支</li>
+</ul>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>从现在开始使用以下命令你就可以备份整个博客了！<br><code>$ hexo backup</code><br>或者使用以下简写命令也可以：<br><code>$ hexo b</code></p>
+<h3 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a>注意！</h3><h2 id="如果你按照上面的备份步骤备份了主题，那目录中的themes-theme-name-git这个文件就会被移除掉哦。"><a href="#如果你按照上面的备份步骤备份了主题，那目录中的themes-theme-name-git这个文件就会被移除掉哦。" class="headerlink" title="如果你按照上面的备份步骤备份了主题，那目录中的themes/theme name/.git这个文件就会被移除掉哦。"></a><strong>如果你按照上面的备份步骤备份了主题，那目录中的themes/theme name/.git这个文件就会被移除掉哦。</strong></h2><h2 id="在Github-io上建立博客新分支"><a href="#在Github-io上建立博客新分支" class="headerlink" title="在Github.io上建立博客新分支"></a>在Github.io上建立博客新分支</h2><p>###创建博客仓库新的分支<br>在Github.io上建立博客时已经开了一个新仓库了，如果再开另一个仓库存放源代码有点浪费，因此采用建立新分支的方法备份博客。不会建分支可以参考<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poL3YyL0dpdC0lRTUlODglODYlRTYlOTQlQUYtJUU1JTg4JTg2JUU2JTk0JUFGJUU3JTlBJTg0JUU2JTk2JUIwJUU1JUJCJUJBJUU0JUI4JThFJUU1JTkwJTg4JUU1JUI5JUI2">Git 分支 - 分支的新建与合并<i class="fa fa-external-link-alt"></i></span>.博客都已经建立好了，那什么时候创建备份分支都是可以的。</p>
+<h4 id="针对博客已经搭建并发布过文章的"><a href="#针对博客已经搭建并发布过文章的" class="headerlink" title="针对博客已经搭建并发布过文章的"></a>针对博客已经搭建并发布过文章的</h4><ol>
+<li><p>在你的博客仓库创建一个分支Hexo（这个命名随意，我这里以Hexo为参考）；</p>
+</li>
+<li><p>设置Hexo为默认分支（不知道怎么设的可以百度）；</p>
+</li>
+</ol>
+<h3 id="将博客仓库clone至本地"><a href="#将博客仓库clone至本地" class="headerlink" title="将博客仓库clone至本地"></a>将博客仓库clone至本地</h3><p>将之前的Hexo文件夹中的:<code>_config.yml</code>，<code>themes/</code>，<code>source</code>，<code>scffolds/</code>，<code>package.json</code>，.<code>gitignore</code>复制到你克隆下来的仓库文件夹，即Username.github.io；（Username是你自己的用户名）</p>
+<h3 id="删除-git"><a href="#删除-git" class="headerlink" title="删除.git"></a>删除.git</h3><p>将themes/next/(我用的是NexT主题)中的.git/删除，否则后面无法将主题文件夹push；</p>
+<h3 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h3><ol>
+<li>在Username.github.io文件夹下面执行<code>npm install</code>，<code>npm install hexo-deployer-git</code>(这里可以看看分支是不是显示为Hexo)。</li>
+<li>同界面执行<code>git add .</code>、<code>git commit -m &quot;&quot;</code>、<code>git push origin hexo</code>来提交hexo网站源文件。</li>
+<li>执行hexo g -d生成静态网页部署至Github上</li>
+</ol>
+<p>这样一来，Username.github.io仓库就有master分支和hexo分支，分别保存静态网页和源文件。</p>
+<h3 id="后续运行"><a href="#后续运行" class="headerlink" title="后续运行"></a>后续运行</h3><p>在本地对博客修改（包括修改主题样式、发布新文章等）后：</p>
+<ol>
+<li>依次执行<code>git add .</code>、<code>git commit -m &quot;&quot;</code>、<code>git push origin hexo</code>来提交hexo网站源文件；</li>
+<li>执行<code>hexo g -d</code>生成静态网页部署至Github上。<br>即重复运行命令的2-3步骤，以上两步没有严格的顺序。</li>
+</ol>
+<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p><strong>感谢：</strong><br>简书：  <span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC81N2I1YTM4NGYyMzQ=">Hexo博客备份<i class="fa fa-external-link-alt"></i></span><br>Github: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvbmV5Y29kZS9oZXhvLWdpdC1iYWNrdXA=">hexo-git-backup<i class="fa fa-external-link-alt"></i></span></p>
+<hr>
+]]></content>
+      <categories>
+        <category>遇见hexo</category>
+        <category>Github</category>
+      </categories>
+      <tags>
+        <tag>hexo基础</tag>
+        <tag>备份</tag>
       </tags>
   </entry>
 </search>
