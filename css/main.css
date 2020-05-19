@@ -655,6 +655,10 @@ code {
 .highlight figcaption a:hover {
   border-bottom-color: var(--highlight-foreground);
 }
+.highlight figcaption a,
+.highlight figcaption span {
+  min-width: 0;
+}
 .highlight .gutter {
   -moz-user-select: none;
   -ms-user-select: none;
@@ -1526,7 +1530,7 @@ pre code {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #9dffd0;
+  background: #52602a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
