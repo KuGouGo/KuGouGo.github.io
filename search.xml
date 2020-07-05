@@ -1,59 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>将Hexo博客备份到Github</title>
-    <url>/2020/05/14/%E5%B0%86Hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%E5%88%B0Github/</url>
-    <content><![CDATA[<p>前段时间折腾了下Hexo的next 5.0+和next 7.8+的版本，具体体验上很不错，由于自己的原因，老是忘记备份，放在文件夹又不见得回去把它翻出来，辛辛苦苦写的文章不能就这样没了，于是想到Hexo博客可不可以备份到Github呢？</p>
-<p><img src="https://wallroom.io/img/1920x1200/thumb/bg-38d4bcd.jpg" alt=""></p>
-<a id="more"></a>
-
-<h2 id="一-使用hexo-git-backup插件"><a href="#一-使用hexo-git-backup插件" class="headerlink" title="一.使用hexo-git-backup插件"></a>一.使用hexo-git-backup插件</h2><p>hexo-git-backup插件在Hexo官网的插件里是搜不到的，这个插件发布在了<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvbmV5Y29kZS9oZXhvLWdpdC1iYWNrdXA=">GitHub<i class="fa fa-external-link-alt"></i></span>上，关于安装使用官方也给了很简洁易懂的说明文档。</p>
-<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>如果你的Hexo版本是2.x.x（查看Hexo版本可使用命令：<code>hexo version</code>）在终端中使用如下命令安装：<br><code>$ npm install hexo-git-backup@0.0.91 --save</code><br>如果你的Hexo版本是3.x.x+则使用如下命令安装:<br><code>$ npm install hexo-git-backup --save</code></p>
-<h3 id="插件的更新"><a href="#插件的更新" class="headerlink" title="插件的更新"></a>插件的更新</h3><p>如果是通过<code>$ npm install hexo-git-backup --save</code>命令安装的那么先要删除掉旧版本再升级，具体命令如下：<br><code>$ npm remove hexo-git-backup</code><br><code>$ npm install hexo-git-backup --save</code></p>
-<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>在hexo的_config.yml里配置这个插件：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">backup:</span><br><span class="line">   type: git</span><br><span class="line">   theme: next,landscape</span><br><span class="line">   message: Back up my blog</span><br><span class="line">   repository:</span><br><span class="line">      github: git@github.com:xxx&#x2F;xxx.git,branchName</span><br><span class="line">      gitcafe: git@github.com:xxx&#x2F;xxx.git,branchName</span><br></pre></td></tr></table></figure>
-<p>详细参数解释：</p>
-<ul>
-<li>theme：你要备份的主题名称 <code>theme name,theme name</code></li>
-<li>message：自定义提交信息</li>
-<li>repository：仓库名，注意仓库地址后面要添加一个分支名，比如我就创建了一个Hexo backup分支</li>
-</ul>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>从现在开始使用以下命令你就可以备份整个博客了！<br><code>$ hexo backup</code><br>或者使用以下简写命令也可以：<br><code>$ hexo b</code></p>
-<h3 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a>注意！</h3><p>如果你按照上面的备份步骤备份了主题，那目录中的themes/theme name/.git这个文件就会被移除掉哦.</p>
-<hr>
-<h2 id="二-在Github-io上建立博客新分支"><a href="#二-在Github-io上建立博客新分支" class="headerlink" title="二.在Github.io上建立博客新分支"></a>二.在Github.io上建立博客新分支</h2><p>###创建博客仓库新的分支<br>在Github.io上建立博客时已经开了一个新仓库了，如果再开另一个仓库存放源代码有点浪费，因此采用建立新分支的方法备份博客。不会建分支可以参考<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poL3YyL0dpdC0lRTUlODglODYlRTYlOTQlQUYtJUU1JTg4JTg2JUU2JTk0JUFGJUU3JTlBJTg0JUU2JTk2JUIwJUU1JUJCJUJBJUU0JUI4JThFJUU1JTkwJTg4JUU1JUI5JUI2">Git 分支 - 分支的新建与合并<i class="fa fa-external-link-alt"></i></span>.博客都已经建立好了，那什么时候创建备份分支都是可以的.</p>
-<h4 id="针对博客已经搭建并发布过文章的"><a href="#针对博客已经搭建并发布过文章的" class="headerlink" title="针对博客已经搭建并发布过文章的"></a>针对博客已经搭建并发布过文章的</h4><ol>
-<li><p>在你的博客仓库创建一个分支Hexo（这个命名随意，我这里以Hexo为参考）.</p>
-</li>
-<li><p>设置Hexo为默认分支（不知道怎么设的可以百度）.</p>
-</li>
-</ol>
-<h3 id="将博客仓库clone至本地"><a href="#将博客仓库clone至本地" class="headerlink" title="将博客仓库clone至本地"></a>将博客仓库clone至本地</h3><p>将之前的Hexo文件夹中的:<code>_config.yml</code>,<code>themes/</code>,<code>source</code>,<code>scffolds/</code>,<code>package.json</code>,<code>.gitignore</code>复制到你克隆下来的仓库文件夹，即Username.github.io.（Username是你自己的用户名）</p>
-<h3 id="删除-git"><a href="#删除-git" class="headerlink" title="删除.git"></a>删除.git</h3><p>将themes/next/(我用的是NexT主题)中的<code>.git</code>删除，否则后面无法将主题文件夹push.</p>
-<h3 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h3><ol>
-<li>在Username.github.io文件夹下面执行<code>npm install</code>，<code>npm install hexo-deployer-git</code>(这里可以看看分支是不是显示为Hexo)。</li>
-<li>同界面执行<code>git add .</code>、<code>git commit -m &quot;&quot;</code>、<code>git push origin hexo</code>来提交hexo网站源文件。</li>
-<li>执行hexo g -d生成静态网页部署至Github上</li>
-</ol>
-<p>这样一来，Username.github.io仓库就有master分支和hexo分支，分别保存静态网页和源文.</p>
-<h3 id="后续运行"><a href="#后续运行" class="headerlink" title="后续运行"></a>后续运行</h3><p>在本地对博客修改（包括修改主题样式、发布新文章等）后：</p>
-<ol>
-<li>依次执行<code>git add .</code>、<code>git commit -m &quot;&quot;</code>、<code>git push origin hexo</code>来提交hexo网站源文件.</li>
-<li>执行<code>hexo g -d</code>生成静态网页部署至Github上.<br>即重复运行命令的2-3步骤，以上两步没有严格的顺序.</li>
-</ol>
-<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p><strong>感谢：</strong><br>简书：  <span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC81N2I1YTM4NGYyMzQ=">Hexo博客备份<i class="fa fa-external-link-alt"></i></span><br>Github: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvbmV5Y29kZS9oZXhvLWdpdC1iYWNrdXA=">hexo-git-backup<i class="fa fa-external-link-alt"></i></span></p>
-<hr>
-]]></content>
-      <categories>
-        <category>遇见hexo</category>
-        <category>Github</category>
-      </categories>
-      <tags>
-        <tag>hexo基础</tag>
-        <tag>备份</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mastering Markdown</title>
     <url>/2020/05/13/Mastering-Markdown/</url>
     <content><![CDATA[<p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p>
@@ -247,6 +194,59 @@ mojombo/github-flavored-markdown#1</code></pre><h3 id="Username-mentions"><a hre
       </categories>
       <tags>
         <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>将Hexo博客备份到Github</title>
+    <url>/2020/05/14/%E5%B0%86Hexo%E5%8D%9A%E5%AE%A2%E5%A4%87%E4%BB%BD%E5%88%B0Github/</url>
+    <content><![CDATA[<p>前段时间折腾了下Hexo的next 5.0+和next 7.8+的版本，具体体验上很不错，由于自己的原因，老是忘记备份，放在文件夹又不见得回去把它翻出来，辛辛苦苦写的文章不能就这样没了，于是想到Hexo博客可不可以备份到Github呢？</p>
+<p><img src="https://wallroom.io/img/1920x1200/thumb/bg-38d4bcd.jpg" alt=""></p>
+<a id="more"></a>
+
+<h2 id="一-使用hexo-git-backup插件"><a href="#一-使用hexo-git-backup插件" class="headerlink" title="一.使用hexo-git-backup插件"></a>一.使用hexo-git-backup插件</h2><p>hexo-git-backup插件在Hexo官网的插件里是搜不到的，这个插件发布在了<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvbmV5Y29kZS9oZXhvLWdpdC1iYWNrdXA=">GitHub<i class="fa fa-external-link-alt"></i></span>上，关于安装使用官方也给了很简洁易懂的说明文档。</p>
+<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>如果你的Hexo版本是2.x.x（查看Hexo版本可使用命令：<code>hexo version</code>）在终端中使用如下命令安装：<br><code>$ npm install hexo-git-backup@0.0.91 --save</code><br>如果你的Hexo版本是3.x.x+则使用如下命令安装:<br><code>$ npm install hexo-git-backup --save</code></p>
+<h3 id="插件的更新"><a href="#插件的更新" class="headerlink" title="插件的更新"></a>插件的更新</h3><p>如果是通过<code>$ npm install hexo-git-backup --save</code>命令安装的那么先要删除掉旧版本再升级，具体命令如下：<br><code>$ npm remove hexo-git-backup</code><br><code>$ npm install hexo-git-backup --save</code></p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>在hexo的_config.yml里配置这个插件：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">backup:</span><br><span class="line">   type: git</span><br><span class="line">   theme: next,landscape</span><br><span class="line">   message: Back up my blog</span><br><span class="line">   repository:</span><br><span class="line">      github: git@github.com:xxx&#x2F;xxx.git,branchName</span><br><span class="line">      gitcafe: git@github.com:xxx&#x2F;xxx.git,branchName</span><br></pre></td></tr></table></figure>
+<p>详细参数解释：</p>
+<ul>
+<li>theme：你要备份的主题名称 <code>theme name,theme name</code></li>
+<li>message：自定义提交信息</li>
+<li>repository：仓库名，注意仓库地址后面要添加一个分支名，比如我就创建了一个Hexo backup分支</li>
+</ul>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>从现在开始使用以下命令你就可以备份整个博客了！<br><code>$ hexo backup</code><br>或者使用以下简写命令也可以：<br><code>$ hexo b</code></p>
+<h3 id="注意！"><a href="#注意！" class="headerlink" title="注意！"></a>注意！</h3><p>如果你按照上面的备份步骤备份了主题，那目录中的themes/theme name/.git这个文件就会被移除掉哦.</p>
+<hr>
+<h2 id="二-在Github-io上建立博客新分支"><a href="#二-在Github-io上建立博客新分支" class="headerlink" title="二.在Github.io上建立博客新分支"></a>二.在Github.io上建立博客新分支</h2><p>###创建博客仓库新的分支<br>在Github.io上建立博客时已经开了一个新仓库了，如果再开另一个仓库存放源代码有点浪费，因此采用建立新分支的方法备份博客。不会建分支可以参考<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poL3YyL0dpdC0lRTUlODglODYlRTYlOTQlQUYtJUU1JTg4JTg2JUU2JTk0JUFGJUU3JTlBJTg0JUU2JTk2JUIwJUU1JUJCJUJBJUU0JUI4JThFJUU1JTkwJTg4JUU1JUI5JUI2">Git 分支 - 分支的新建与合并<i class="fa fa-external-link-alt"></i></span>.博客都已经建立好了，那什么时候创建备份分支都是可以的.</p>
+<h4 id="针对博客已经搭建并发布过文章的"><a href="#针对博客已经搭建并发布过文章的" class="headerlink" title="针对博客已经搭建并发布过文章的"></a>针对博客已经搭建并发布过文章的</h4><ol>
+<li><p>在你的博客仓库创建一个分支Hexo（这个命名随意，我这里以Hexo为参考）.</p>
+</li>
+<li><p>设置Hexo为默认分支（不知道怎么设的可以百度）.</p>
+</li>
+</ol>
+<h3 id="将博客仓库clone至本地"><a href="#将博客仓库clone至本地" class="headerlink" title="将博客仓库clone至本地"></a>将博客仓库clone至本地</h3><p>将之前的Hexo文件夹中的:<code>_config.yml</code>,<code>themes/</code>,<code>source</code>,<code>scffolds/</code>,<code>package.json</code>,<code>.gitignore</code>复制到你克隆下来的仓库文件夹，即Username.github.io.（Username是你自己的用户名）</p>
+<h3 id="删除-git"><a href="#删除-git" class="headerlink" title="删除.git"></a>删除.git</h3><p>将themes/next/(我用的是NexT主题)中的<code>.git</code>删除，否则后面无法将主题文件夹push.</p>
+<h3 id="运行命令"><a href="#运行命令" class="headerlink" title="运行命令"></a>运行命令</h3><ol>
+<li>在Username.github.io文件夹下面执行<code>npm install</code>，<code>npm install hexo-deployer-git</code>(这里可以看看分支是不是显示为Hexo)。</li>
+<li>同界面执行<code>git add .</code>、<code>git commit -m &quot;&quot;</code>、<code>git push origin hexo</code>来提交hexo网站源文件。</li>
+<li>执行hexo g -d生成静态网页部署至Github上</li>
+</ol>
+<p>这样一来，Username.github.io仓库就有master分支和hexo分支，分别保存静态网页和源文.</p>
+<h3 id="后续运行"><a href="#后续运行" class="headerlink" title="后续运行"></a>后续运行</h3><p>在本地对博客修改（包括修改主题样式、发布新文章等）后：</p>
+<ol>
+<li>依次执行<code>git add .</code>、<code>git commit -m &quot;&quot;</code>、<code>git push origin hexo</code>来提交hexo网站源文件.</li>
+<li>执行<code>hexo g -d</code>生成静态网页部署至Github上.<br>即重复运行命令的2-3步骤，以上两步没有严格的顺序.</li>
+</ol>
+<h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p><strong>感谢：</strong><br>简书：  <span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC81N2I1YTM4NGYyMzQ=">Hexo博客备份<i class="fa fa-external-link-alt"></i></span><br>Github: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvbmV5Y29kZS9oZXhvLWdpdC1iYWNrdXA=">hexo-git-backup<i class="fa fa-external-link-alt"></i></span></p>
+<hr>
+]]></content>
+      <categories>
+        <category>遇见hexo</category>
+        <category>Github</category>
+      </categories>
+      <tags>
+        <tag>hexo基础</tag>
+        <tag>备份</tag>
       </tags>
   </entry>
   <entry>
