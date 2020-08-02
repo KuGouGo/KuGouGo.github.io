@@ -1,6 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>第一次搭建hexo博客</title>
+    <url>/archives/83682157.html</url>
+    <content><![CDATA[<blockquote>
+<p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
+</blockquote>
+<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0ea4426.jpg" alt=""></p>
+<a id="more"></a>
+<p>经过几天初步探索与实践，一路摸爬滚打，开始有了现在的效果。今天写下第一篇小记来记录下。</p>
+<h4 id="目前初步完成了以下"><a href="#目前初步完成了以下" class="headerlink" title="目前初步完成了以下"></a>目前初步完成了以下</h4><ul>
+<li>完成了博客的初步搭建，历时两天</li>
+<li>完成了部分个性化的内容，历时五天<ul>
+<li>通过<strong>Aplayer</strong>设置歌单</li>
+<li>添加博客背景</li>
+<li>添加了可爱的看板娘</li>
+<li>设置了博客运行时间</li>
+<li>添加了评论系统  </li>
+<li>添加了个性back2top</li>
+<li>添加了今日诗词</li>
+<li>添加了文末声明</li>
+<li>添加了博客数据统计</li>
+<li>更新了文末标签</li>
+</ul>
+</li>
+</ul>
+<h4 id="目前在计划中的事情"><a href="#目前在计划中的事情" class="headerlink" title="目前在计划中的事情"></a>目前在计划中的事情</h4><p>-[x] 找到一个免费的图床为博客后续做准备<br>-[x] 将<strong>Markdown</strong>用于写写日常来练习<br>-[x] 继续打磨我的博客<br>-[ ] 好好学习，天天向上  </p>
+<h4 id="遇到的些许问题"><a href="#遇到的些许问题" class="headerlink" title="遇到的些许问题"></a>遇到的些许问题</h4><ol>
+<li><p>next主题设置并不生效不停的采取<code>$ hexo clean</code> <code>$ hexo g &amp;&amp; hexo s</code> <code>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+</li>
+<li><p>APlayer插件放置的位置不理想，也不生成自己想要的效果,详情参考<span class="exturl" data-url="aHR0cHM6Ly95eHl2cG4uY29tLzIwMjAvMDQvMTUvcGpheCVFNSVBRiVCQyVFOCU4NyVCNCVFNiU5NyVBMCVFNiVCMyU5NSVFNSU4OCU5RCVFNSVBNyU4QiVFNSU4QyU5NmFwbGF5ZXIlRTklOUYlQjMlRTQlQjklOTAlRTYlOTIlQUQlRTYlOTQlQkUlRTUlOTklQTgv">pjax导致无法初始化aplayer音乐播放器<i class="fa fa-external-link-alt"></i></span>，主要问题如下：</p>
+</li>
+</ol>
+<p>1.Aplayer主页插件和歌单里面的切换有干扰</p>
+<p>2.Aplayer的<font color=#FF6600>Meting.js</font>由于没有CDN可以引用，只能下载<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21ldG93b2xmL01ldGluZ0pTL3Jhdy92MS4yL3NyYy9NZXRpbmcuanM=">MetingJS 1.2.0<i class="fa fa-external-link-alt"></i></span>源码，引用到本地的路径,来达到效果</p>
+<p>3.博客主页没有预计的<font color=Blue>RSS</font>效果实现</p>
+<p>4.NexT主题版本升级迁移数据耗时良久</p>
+<p>5.中英文符号的切换导致博客页面没有预计效果</p>
+<hr>
+<p>以上这些问题对一个刚刚接触这方面的我来说，有问题只能使劲gang <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8=">Google<i class="fa fa-external-link-alt"></i></span>。好在一切都已经进入了正轨，接下来就开始享受拥有博客的快乐时光。感谢自己不抛弃不放弃的精神！</p>
+<p>可以听听<a href="https://kugougo.github.io/playlist/">我的音乐</a></p>
+]]></content>
+      <categories>
+        <category>遇见hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>将Hexo博客备份到Github</title>
     <url>/archives/95e5f896.html</url>
     <content><![CDATA[<p>前段时间折腾了下Hexo的next 5.0+和next 7.8+的版本，具体体验上很不错，由于自己的原因，老是忘记备份，放在文件夹又不见得回去把它翻出来，辛辛苦苦写的文章不能就这样没了，于是想到Hexo博客可不可以备份到Github呢？</p>
@@ -61,6 +109,57 @@
       <tags>
         <tag>hexo基础</tag>
         <tag>备份</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>赋闲的一天</title>
+    <url>/archives/4668f577.html</url>
+    <content><![CDATA[<p>毕业报告完成的匆匆忙忙,没有一丝急迫感,貌似也找不到什么特别的感觉,闲来无事记上一记.</p>
+<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0b9df28.jpg" alt=""></p>
+<a id="more"></a>
+<h2 id="又来折腾主题了"><a href="#又来折腾主题了" class="headerlink" title="又来折腾主题了"></a>又来折腾主题了</h2><p>闲下来又把hexo从next换到butterfly,花了半天时间布置好了,还是觉得next简洁明了,适合我这单纯聊聊日常的人.折腾的太花里胡哨也让自己审美疲劳,于是又把报错的next搬了回来,迁移了此前发的一篇post,终归还是回来了!去掉了一些花里胡哨的操作又开始上路了.</p>
+<h3 id="主要区别"><a href="#主要区别" class="headerlink" title="主要区别"></a>主要区别</h3><ol>
+<li>butterfly:视觉冲击很强</li>
+<li>next:简单大气,DIY性更高</li>
+</ol>
+<h2 id="Microsoft-Edge体验"><a href="#Microsoft-Edge体验" class="headerlink" title="Microsoft Edge体验"></a>Microsoft Edge体验</h2><p>刚好在调试博客的时候chrome出问题了,估计是昨天调试butterfly的时候引用<span class="exturl" data-url="aHR0cHM6Ly93d3cucGV4ZWxzLmNvbS96aC1jbi8=">Pexels<i class="fa fa-external-link-alt"></i></span>的4k超清背景图导致缓存一时不能自动清理,只会<code>CTRL+SHIFT+R</code>勉强操作一波,把自己给憨到了.随之打开关在小黑屋的Microsoft Edge,刚好提示有全新内核的.便想着体验体验</p>
+<h3 id="新特性新体验"><a href="#新特性新体验" class="headerlink" title="新特性新体验"></a>新特性新体验</h3><ol>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pbWctcHJvZC1jbXMtcnQtbWljcm9zb2Z0LWNvbS5ha2FtYWl6ZWQubmV0L2Ntcy9hcGkvYW0vaW1hZ2VGaWxlRGF0YS9SRTR1Yk1Q">新图标<i class="fa fa-external-link-alt"></i></span></li>
+<li><span class="exturl" data-url="aHR0cHM6Ly9pbWctcHJvZC1jbXMtcnQtbWljcm9zb2Z0LWNvbS5ha2FtYWl6ZWQubmV0L2Ntcy9hcGkvYW0vaW1hZ2VGaWxlRGF0YS9SRTR1NDZN">非常漂亮的界面<i class="fa fa-external-link-alt"></i></span>  </li>
+<li>全新的速度</li>
+<li>更高的生产力量</li>
+</ol>
+<p>不得不说体验下来还是很舒服的,插件和书签还有历史记录全部从chrome搬了过来,同步到位的感觉挺舒服的,毕竟也是有chrome的高贵血统了.chrome确实也不如它漂亮,但是加载起网页来还是有蛮多不足的,遂又把chrome固定到了任务栏里做常客.</p>
+<h2 id="B-F-F"><a href="#B-F-F" class="headerlink" title="B F F"></a>B F F</h2><p>这一来二去折腾的我还挺享受这种感觉的,毕竟闲着也是闲着,干嘛不找点东西折腾下图个打发时间.</p>
+<hr>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>蹉跎岁月</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>竭泽而渔</title>
+    <url>/archives/3ba6821.html</url>
+    <content><![CDATA[<p>人比想要的要脆弱</p>
+<blockquote>
+<p>薄衾孤枕，梦回人静，彻晓潇潇雨</p>
+</blockquote>
+<p><img src="https://images.pexels.com/photos/3876328/pexels-photo-3876328.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></p>
+<a id="more"></a>
+<h3 id="放弃"><a href="#放弃" class="headerlink" title="放弃"></a>放弃</h3><p>因为疫情的原因人也懒散了很多,也渐渐在舒适中迷失了方向,我能做的就是竭尽全力的去找一条适合自己的路.去年开学就面临着备考四级,作为一名在高考中失利的我来说,这又是一条新路,怎么披荆斩棘一直都在计划与实施,奈何当初平行志愿随意的一填写,就让我走了许多弯路,我能做的就是不断地寻找出来.终究还是因为对自己失望了放弃了自己的一些优势,转而投入了迷惘与无措.</p>
+<h3 id="希望"><a href="#希望" class="headerlink" title="希望"></a>希望</h3><p>我的专业属于机械制造与自动化的方向,所以我觉得不应该年纪轻轻的就入了厂,不想平平淡淡的日子就这么开始了.回广州拿了毕业证,一度迷惘.刚好碰到省考招考的公告,转而又投向了一条新的道路.</p>
+<h3 id="备战"><a href="#备战" class="headerlink" title="备战"></a>备战</h3><p>一个多月我没有间断的看资料、学习、刷题、识记.我想充分发挥我应届毕业生的身份,去努力的争取一把自己的未来.7.14打开了报名网址将资料准确无误的提交上去进行审核,开始缴费.谨慎认真的对待着刚刚好的机会,那一刻真的感觉自己好长时间没有这么认真没有那么静下心来的做一件事.我能做的就是争取并一次上岸.后面发觉真的有些东西还是需要日积月累的,我没有办法在这短短十几天完成别人努力准备了七八个月甚至好几年的结果.当他们在群里交谈的时候更多的是感叹自己没有在大学刚毕业的几年里投入时间去准备去好好的静下心来享受学习吃苦的过程.他们有银行职员,有医生有护士,明明是那么多人都羡慕的职业,但在他们眼里比不上一个好的稳定的状态,她们也只是想将曾经奉献给这个家庭的青春添一笔与遗憾相对的经历.上岸对于他们来说是执著而且深切的,我开始有些明白了.当然也有跟我一样刚毕业的大学生都是老一辈人语重心长的劝诫来的,我们能做的就是努力的去证明自己努力过.</p>
+<h3 id="陪考"><a href="#陪考" class="headerlink" title="陪考"></a>陪考</h3><p>报考的第三天人数同一岗位才6个人进行缴费,我暗自庆幸这个小城市的好.当7.24那天下午去看考场的时候我看到了几个熟人有初中同学,也有高中的同学,我们都点头微笑,没有追问着为了什么而来,大家显而易见没有什么不同.在酒店里我静下心刷了一套题暗自安了心.十二点放下了手机开始休息,四点的时候又醒了,我能做的就是让自己平静下来,能保证好状态.第二天七点起床速记了一些技巧,吃过早饭便去那里候着了.终究还是觉得紧张了,我们能做的就像听天由命一样.我也觉得言语的部分耗费的时间太多,常识按经验来看大家都差不多,能拉出差距的就是数量和资料分析了.奋笔疾书的时候提示还有15分钟,那一刻我真的有点慌,好在时间是错误的,报时器快了15分钟,不过我依然做不完,还有25道数资没有去正眼看,我就埋头把资料分析解决了5道,后面十道凭着感觉走,至于数量完全没有心思去算,也就体验了一回BC间断开蒙(当然也是看着技巧来的),所幸在规定时间内涂好了答题卡,那一刻心都提到嗓子眼了,下午申论发挥的还行,至少大作文在深思熟虑中把逻辑关系理好了.</p>
+<h3 id="复盘"><a href="#复盘" class="headerlink" title="复盘"></a>复盘</h3><p>之前的学习也是把重心放在了行测上,申论只是每天晚上刷一套题,其实下来感觉也还好,至少没有上午那么心寒.我们考室就有四个弃考,这样看来来了也就赢了一些人了,剩下的事情听天由命吧.晚上睡觉前还是忍不住复盘估了下分大概也就五十上下的样子,哭也是不好意思的,当然也没用,又是一阵痛心疾首.甚至还是有点心存幻想的,我又查了下报名人数,我怀疑自己花了眼,仔细对比下,突然岗位上有41个人在争取,那一刻心真的很慌也很难受.可能这次真的要陪考了…</p>
+]]></content>
+      <categories>
+        <category>杂记</category>
+      </categories>
+      <tags>
+        <tag>蹉跎岁月</tag>
       </tags>
   </entry>
   <entry>
@@ -258,105 +357,6 @@ mojombo/github-flavored-markdown#1</code></pre><h3 id="Username-mentions"><a hre
       </categories>
       <tags>
         <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一次搭建hexo博客</title>
-    <url>/archives/83682157.html</url>
-    <content><![CDATA[<blockquote>
-<p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
-</blockquote>
-<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0ea4426.jpg" alt=""></p>
-<a id="more"></a>
-<p>经过几天初步探索与实践，一路摸爬滚打，开始有了现在的效果。今天写下第一篇小记来记录下。</p>
-<h4 id="目前初步完成了以下"><a href="#目前初步完成了以下" class="headerlink" title="目前初步完成了以下"></a>目前初步完成了以下</h4><ul>
-<li>完成了博客的初步搭建，历时两天</li>
-<li>完成了部分个性化的内容，历时五天<ul>
-<li>通过<strong>Aplayer</strong>设置歌单</li>
-<li>添加博客背景</li>
-<li>添加了可爱的看板娘</li>
-<li>设置了博客运行时间</li>
-<li>添加了评论系统  </li>
-<li>添加了个性back2top</li>
-<li>添加了今日诗词</li>
-<li>添加了文末声明</li>
-<li>添加了博客数据统计</li>
-<li>更新了文末标签</li>
-</ul>
-</li>
-</ul>
-<h4 id="目前在计划中的事情"><a href="#目前在计划中的事情" class="headerlink" title="目前在计划中的事情"></a>目前在计划中的事情</h4><p>-[x] 找到一个免费的图床为博客后续做准备<br>-[x] 将<strong>Markdown</strong>用于写写日常来练习<br>-[x] 继续打磨我的博客<br>-[ ] 好好学习，天天向上  </p>
-<h4 id="遇到的些许问题"><a href="#遇到的些许问题" class="headerlink" title="遇到的些许问题"></a>遇到的些许问题</h4><ol>
-<li><p>next主题设置并不生效不停的采取<code>$ hexo clean</code> <code>$ hexo g &amp;&amp; hexo s</code> <code>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
-</li>
-<li><p>APlayer插件放置的位置不理想，也不生成自己想要的效果,详情参考<span class="exturl" data-url="aHR0cHM6Ly95eHl2cG4uY29tLzIwMjAvMDQvMTUvcGpheCVFNSVBRiVCQyVFOCU4NyVCNCVFNiU5NyVBMCVFNiVCMyU5NSVFNSU4OCU5RCVFNSVBNyU4QiVFNSU4QyU5NmFwbGF5ZXIlRTklOUYlQjMlRTQlQjklOTAlRTYlOTIlQUQlRTYlOTQlQkUlRTUlOTklQTgv">pjax导致无法初始化aplayer音乐播放器<i class="fa fa-external-link-alt"></i></span>，主要问题如下：</p>
-</li>
-</ol>
-<p>1.Aplayer主页插件和歌单里面的切换有干扰</p>
-<p>2.Aplayer的<font color=#FF6600>Meting.js</font>由于没有CDN可以引用，只能下载<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL21ldG93b2xmL01ldGluZ0pTL3Jhdy92MS4yL3NyYy9NZXRpbmcuanM=">MetingJS 1.2.0<i class="fa fa-external-link-alt"></i></span>源码，引用到本地的路径,来达到效果</p>
-<p>3.博客主页没有预计的<font color=Blue>RSS</font>效果实现</p>
-<p>4.NexT主题版本升级迁移数据耗时良久</p>
-<p>5.中英文符号的切换导致博客页面没有预计效果</p>
-<hr>
-<p>以上这些问题对一个刚刚接触这方面的我来说，有问题只能使劲gang <span class="exturl" data-url="aHR0cHM6Ly93d3cuZ29vZ2xlLmNvbS8=">Google<i class="fa fa-external-link-alt"></i></span>。好在一切都已经进入了正轨，接下来就开始享受拥有博客的快乐时光。感谢自己不抛弃不放弃的精神！</p>
-<p>可以听听<a href="https://kugougo.github.io/playlist/">我的音乐</a></p>
-]]></content>
-      <categories>
-        <category>遇见hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo基础</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>竭泽而渔</title>
-    <url>/archives/3ba6821.html</url>
-    <content><![CDATA[<p>人比想要的要脆弱</p>
-<blockquote>
-<p>薄衾孤枕，梦回人静，彻晓潇潇雨</p>
-</blockquote>
-<p><img src="https://images.pexels.com/photos/3876328/pexels-photo-3876328.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></p>
-<a id="more"></a>
-<h3 id="放弃"><a href="#放弃" class="headerlink" title="放弃"></a>放弃</h3><p>因为疫情的原因人也懒散了很多,也渐渐在舒适中迷失了方向,我能做的就是竭尽全力的去找一条适合自己的路.去年开学就面临着备考四级,作为一名在高考中失利的我来说,这又是一条新路,怎么披荆斩棘一直都在计划与实施,奈何当初平行志愿随意的一填写,就让我走了许多弯路,我能做的就是不断地寻找出来.终究还是因为对自己失望了放弃了自己的一些优势,转而投入了迷惘与无措.</p>
-<h3 id="希望"><a href="#希望" class="headerlink" title="希望"></a>希望</h3><p>我的专业属于机械制造与自动化的方向,所以我觉得不应该年纪轻轻的就入了厂,不想平平淡淡的日子就这么开始了.回广州拿了毕业证,一度迷惘.刚好碰到省考招考的公告,转而又投向了一条新的道路.</p>
-<h3 id="备战"><a href="#备战" class="headerlink" title="备战"></a>备战</h3><p>一个多月我没有间断的看资料、学习、刷题、识记.我想充分发挥我应届毕业生的身份,去努力的争取一把自己的未来.7.14打开了报名网址将资料准确无误的提交上去进行审核,开始缴费.谨慎认真的对待着刚刚好的机会,那一刻真的感觉自己好长时间没有这么认真没有那么静下心来的做一件事.我能做的就是争取并一次上岸.后面发觉真的有些东西还是需要日积月累的,我没有办法在这短短十几天完成别人努力准备了七八个月甚至好几年的结果.当他们在群里交谈的时候更多的是感叹自己没有在大学刚毕业的几年里投入时间去准备去好好的静下心来享受学习吃苦的过程.他们有银行职员,有医生有护士,明明是那么多人都羡慕的职业,但在他们眼里比不上一个好的稳定的状态,她们也只是想将曾经奉献给这个家庭的青春添一笔与遗憾相对的经历.上岸对于他们来说是执著而且深切的,我开始有些明白了.当然也有跟我一样刚毕业的大学生都是老一辈人语重心长的劝诫来的,我们能做的就是努力的去证明自己努力过.</p>
-<h3 id="陪考"><a href="#陪考" class="headerlink" title="陪考"></a>陪考</h3><p>报考的第三天人数同一岗位才6个人进行缴费,我暗自庆幸这个小城市的好.当7.24那天下午去看考场的时候我看到了几个熟人有初中同学,也有高中的同学,我们都点头微笑,没有追问着为了什么而来,大家显而易见没有什么不同.在酒店里我静下心刷了一套题暗自安了心.十二点放下了手机开始休息,四点的时候又醒了,我能做的就是让自己平静下来,能保证好状态.第二天七点起床速记了一些技巧,吃过早饭便去那里候着了.终究还是觉得紧张了,我们能做的就像听天由命一样.我也觉得言语的部分耗费的时间太多,常识按经验来看大家都差不多,能拉出差距的就是数量和资料分析了.奋笔疾书的时候提示还有15分钟,那一刻我真的有点慌,好在时间是错误的,报时器快了15分钟,不过我依然做不完,还有25道数资没有去正眼看,我就埋头把资料分析解决了5道,后面十道凭着感觉走,至于数量完全没有心思去算,也就体验了一回BC间断开蒙(当然也是看着技巧来的),所幸在规定时间内涂好了答题卡,那一刻心都提到嗓子眼了,下午申论发挥的还行,至少大作文在深思熟虑中把逻辑关系理好了.</p>
-<h3 id="复盘"><a href="#复盘" class="headerlink" title="复盘"></a>复盘</h3><p>之前的学习也是把重心放在了行测上,申论只是每天晚上刷一套题,其实下来感觉也还好,至少没有上午那么心寒.我们考室就有四个弃考,这样看来来了也就赢了一些人了,剩下的事情听天由命吧.晚上睡觉前还是忍不住复盘估了下分大概也就五十上下的样子,哭也是不好意思的,当然也没用,又是一阵痛心疾首.甚至还是有点心存幻想的,我又查了下报名人数,我怀疑自己花了眼,仔细对比下,突然岗位上有41个人在争取,那一刻心真的很慌也很难受.可能这次真的要陪考了…</p>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>蹉跎岁月</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>赋闲的一天</title>
-    <url>/archives/4668f577.html</url>
-    <content><![CDATA[<p>毕业报告完成的匆匆忙忙,没有一丝急迫感,貌似也找不到什么特别的感觉,闲来无事记上一记.</p>
-<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0b9df28.jpg" alt=""></p>
-<a id="more"></a>
-<h2 id="又来折腾主题了"><a href="#又来折腾主题了" class="headerlink" title="又来折腾主题了"></a>又来折腾主题了</h2><p>闲下来又把hexo从next换到butterfly,花了半天时间布置好了,还是觉得next简洁明了,适合我这单纯聊聊日常的人.折腾的太花里胡哨也让自己审美疲劳,于是又把报错的next搬了回来,迁移了此前发的一篇post,终归还是回来了!去掉了一些花里胡哨的操作又开始上路了.</p>
-<h3 id="主要区别"><a href="#主要区别" class="headerlink" title="主要区别"></a>主要区别</h3><ol>
-<li>butterfly:视觉冲击很强</li>
-<li>next:简单大气,DIY性更高</li>
-</ol>
-<h2 id="Microsoft-Edge体验"><a href="#Microsoft-Edge体验" class="headerlink" title="Microsoft Edge体验"></a>Microsoft Edge体验</h2><p>刚好在调试博客的时候chrome出问题了,估计是昨天调试butterfly的时候引用<span class="exturl" data-url="aHR0cHM6Ly93d3cucGV4ZWxzLmNvbS96aC1jbi8=">Pexels<i class="fa fa-external-link-alt"></i></span>的4k超清背景图导致缓存一时不能自动清理,只会<code>CTRL+SHIFT+R</code>勉强操作一波,把自己给憨到了.随之打开关在小黑屋的Microsoft Edge,刚好提示有全新内核的.便想着体验体验</p>
-<h3 id="新特性新体验"><a href="#新特性新体验" class="headerlink" title="新特性新体验"></a>新特性新体验</h3><ol>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pbWctcHJvZC1jbXMtcnQtbWljcm9zb2Z0LWNvbS5ha2FtYWl6ZWQubmV0L2Ntcy9hcGkvYW0vaW1hZ2VGaWxlRGF0YS9SRTR1Yk1Q">新图标<i class="fa fa-external-link-alt"></i></span></li>
-<li><span class="exturl" data-url="aHR0cHM6Ly9pbWctcHJvZC1jbXMtcnQtbWljcm9zb2Z0LWNvbS5ha2FtYWl6ZWQubmV0L2Ntcy9hcGkvYW0vaW1hZ2VGaWxlRGF0YS9SRTR1NDZN">非常漂亮的界面<i class="fa fa-external-link-alt"></i></span>  </li>
-<li>全新的速度</li>
-<li>更高的生产力量</li>
-</ol>
-<p>不得不说体验下来还是很舒服的,插件和书签还有历史记录全部从chrome搬了过来,同步到位的感觉挺舒服的,毕竟也是有chrome的高贵血统了.chrome确实也不如它漂亮,但是加载起网页来还是有蛮多不足的,遂又把chrome固定到了任务栏里做常客.</p>
-<h2 id="B-F-F"><a href="#B-F-F" class="headerlink" title="B F F"></a>B F F</h2><p>这一来二去折腾的我还挺享受这种感觉的,毕竟闲着也是闲着,干嘛不找点东西折腾下图个打发时间.</p>
-<hr>
-]]></content>
-      <categories>
-        <category>杂记</category>
-      </categories>
-      <tags>
-        <tag>蹉跎岁月</tag>
       </tags>
   </entry>
 </search>
