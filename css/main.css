@@ -252,8 +252,7 @@ h6 {
 p {
   margin: 0 0 20px;
 }
-a,
-span.exturl {
+a {
   border-bottom: 1px solid #999;
   color: var(--link-color);
   cursor: pointer;
@@ -261,8 +260,7 @@ span.exturl {
   text-decoration: none;
   overflow-wrap: break-word;
 }
-a:hover,
-span.exturl:hover {
+a:hover {
   border-bottom-color: var(--link-hover-color);
   color: var(--link-hover-color);
 }
@@ -592,6 +590,7 @@ pre code {
 }
 .post-body .link-grid {
   display: grid;
+  grid-gap: 1.5rem 1.5rem;
   gap: 1.5rem 1.5rem;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 20px;
@@ -1215,17 +1214,14 @@ pre code {
     display: none;
   }
 }
-.menu-item a,
-.menu-item span.exturl {
+.menu-item a {
   border-bottom: 0;
   display: block;
   font-size: 0.8125em;
   transition: border-color 0.2s ease-in-out;
 }
 .menu-item a:hover,
-.menu-item span.exturl:hover,
-.menu-item a.menu-item-active,
-.menu-item span.exturl.menu-item-active {
+.menu-item a.menu-item-active {
   background: var(--menu-item-bg-color);
 }
 .menu-item .fa,
@@ -1290,8 +1286,7 @@ pre code {
   font-size: 0.8125em;
   margin-top: 0;
 }
-.links-of-author a,
-.links-of-author span.exturl {
+.links-of-author a {
   font-size: 0.8125em;
 }
 .sidebar .sidebar-button:not(:first-child) {
@@ -1857,8 +1852,7 @@ pre code {
 .posts-collapse .post-content .post-title {
   display: inline;
 }
-.posts-collapse .post-content .post-title a,
-.posts-collapse .post-content .post-title span.exturl {
+.posts-collapse .post-content .post-title a {
   border-bottom: 0;
   color: var(--link-color);
 }
@@ -2727,8 +2721,7 @@ mark.search-keyword {
   display: block;
   margin: 0;
 }
-.menu .menu-item a,
-.menu .menu-item span.exturl {
+.menu .menu-item a {
   padding: 5px 20px;
   position: relative;
   text-align: left;
@@ -2765,14 +2758,12 @@ mark.search-keyword {
 .sub-menu .menu-item {
   display: inline-block;
 }
-.sub-menu .menu-item a,
-.sub-menu .menu-item span.exturl {
+.sub-menu .menu-item a {
   background: transparent;
   margin: 5px 10px;
   padding: initial;
 }
-.sub-menu .menu-item a:hover,
-.sub-menu .menu-item span.exturl:hover {
+.sub-menu .menu-item a:hover {
   background: transparent;
   color: #fc6423;
 }
@@ -2837,8 +2828,7 @@ mark.search-keyword {
 .links-of-author-item {
   margin: 5px 0 0;
 }
-.links-of-author-item a,
-.links-of-author-item span.exturl {
+.links-of-author-item a {
   box-sizing: border-box;
   display: inline-block;
   max-width: 100%;
@@ -2847,14 +2837,12 @@ mark.search-keyword {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.links-of-author-item a,
-.links-of-author-item span.exturl {
+.links-of-author-item a {
   border-bottom: 0;
   border-radius: 4px;
   display: block;
 }
-.links-of-author-item a:hover,
-.links-of-author-item span.exturl:hover {
+.links-of-author-item a:hover {
   background: var(--body-bg-color);
 }
 .main-inner > .sub-menu,
