@@ -16,7 +16,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
@@ -24,7 +24,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"kugougo.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+    var CONFIG = {"hostname":"kugougo.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).">
 <meta property="og:type" content="article">
@@ -57,6 +57,15 @@
 </script>
 <title>Mastering Markdown | 孤岛鲸</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165257872-1"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-165257872-1');
+      }
+    </script>
 
 
 
@@ -124,6 +133,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -137,11 +147,37 @@
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>归档</a></li>
         <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>时间轴</a></li>
         <li class="menu-item menu-item-playlist"><a href="/playlist/" rel="section"><i class="fab fa-playstation fa-fw"></i>音悦台</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>找茬儿
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
         
@@ -203,13 +239,13 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/KuGouGo" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;KuGouGo" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0t1R291R28=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;KuGouGo"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <a href="https://kugougo.github.io/atom.xml" title="RSS → https:&#x2F;&#x2F;kugougo.github.io&#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1475913017@qq.com" title="E-Mail → mailto:1475913017@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+        <span class="exturl" data-url="bWFpbHRvOjE0NzU5MTMwMTdAcXEuY29t" title="E-Mail → mailto:1475913017@qq.com"><i class="fa fa-envelope fa-fw"></i></span>
       </span>
   </div>
 
@@ -304,12 +340,12 @@
     </span>
 
   
-    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+    <span id="/archives/7e5f3ff5.html" class="post-meta-item leancloud_visitors" data-flag-title="Mastering Markdown" title="阅读次数">
       <span class="post-meta-item-icon">
         <i class="far fa-eye"></i>
       </span>
       <span class="post-meta-item-text">阅读次数：</span>
-      <span id="busuanzi_value_page_pv"></span>
+      <span class="leancloud-visitors-count"></span>
     </span>
       </div>
       <div class="post-meta">
@@ -337,7 +373,7 @@
     
     <div class="post-body" itemprop="articleBody">
         <p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p>
-<p><img data-src="https://wallroom.io/img/1920x1080/thumb/bg-35fb13d.jpg" alt=""></p>
+<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-35fb13d.jpg" alt=""></p>
 <a id="more"></a>
 <p><strong>What you will learn:</strong></p>
 <ul>
@@ -347,8 +383,8 @@
 <li>How to leverage GitHub’s automatic Markdown rendering</li>
 <li>How to apply GitHub’s unique Markdown extensions</li>
 </ul>
-<h2 id="What-is-Markdown"><a href="#What-is-Markdown" class="headerlink" title="What is Markdown"></a>What is Markdown</h2><p><a target="_blank" rel="noopener" href="https://daringfireball.net/projects/markdown/">Markdown</a> is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like <code>#</code> or <code>*</code>.</p>
-<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><div class="tabs" id="text"><ul class="nav-tabs"><li class="tab active"><a href="#text-1">Text</a></li><li class="tab"><a href="#text-2">Lists</a></li><li class="tab"><a href="#text-3">Images</a></li><li class="tab"><a href="#text-4">Headers & Quotes</a></li><li class="tab"><a href="#text-5">Code</a></li><li class="tab"><a href="#text-6">Extras</a></li></ul><div class="tab-content"><div class="tab-pane active" id="text-1"><pre><code>It&apos;s very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)</code></pre><p>It’s very easy to make some words <strong>bold</strong> and other words <em>italic</em> with Markdown. You can even <a target="_blank" rel="noopener" href="http://google.com">link to Google!</a></p></div><div class="tab-pane" id="text-2"><pre><code>Sometimes you want numbered lists:
+<h2 id="What-is-Markdown"><a href="#What-is-Markdown" class="headerlink" title="What is Markdown"></a>What is Markdown</h2><p><span class="exturl" data-url="aHR0cHM6Ly9kYXJpbmdmaXJlYmFsbC5uZXQvcHJvamVjdHMvbWFya2Rvd24v">Markdown<i class="fa fa-external-link-alt"></i></span> is a way to style text on the web. You control the display of the document; formatting words as bold or italic, adding images, and creating lists are just a few of the things we can do with Markdown. Mostly, Markdown is just regular text with a few non-alphabetic characters thrown in, like <code>#</code> or <code>*</code>.</p>
+<h2 id="Examples"><a href="#Examples" class="headerlink" title="Examples"></a>Examples</h2><div class="tabs" id="text"><ul class="nav-tabs"><li class="tab active"><a href="#text-1">Text</a></li><li class="tab"><a href="#text-2">Lists</a></li><li class="tab"><a href="#text-3">Images</a></li><li class="tab"><a href="#text-4">Headers & Quotes</a></li><li class="tab"><a href="#text-5">Code</a></li><li class="tab"><a href="#text-6">Extras</a></li></ul><div class="tab-content"><div class="tab-pane active" id="text-1"><pre><code>It&apos;s very easy to make some words **bold** and other words *italic* with Markdown. You can even [link to Google!](http://google.com)</code></pre><p>It’s very easy to make some words <strong>bold</strong> and other words <em>italic</em> with Markdown. You can even <span class="exturl" data-url="aHR0cDovL2dvb2dsZS5jb20=">link to Google!<i class="fa fa-external-link-alt"></i></span></p></div><div class="tab-pane" id="text-2"><pre><code>Sometimes you want numbered lists:
 
 1. One
 2. Two
@@ -382,7 +418,7 @@ Alternatively,
 </ul></div><div class="tab-pane" id="text-3"><pre><code>If you want to embed images, this is how you do it:
 
 ![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)</code></pre><p>If you want to embed images, this is how you do it:</p>
-<p><img data-src="https://octodex.github.com/images/yaktocat.png" alt="Image of Yaktocat"></p></div><div class="tab-pane" id="text-4"><pre><code>### Structured documents
+<p><img src="https://octodex.github.com/images/yaktocat.png" alt="Image of Yaktocat"></p></div><div class="tab-pane" id="text-4"><pre><code>### Structured documents
 
 Sometimes it&apos;s useful to have different levels of headings to structure your documents. Start lines with a `#` to create headings.   Multiple `##` in a row denote smaller heading sizes.
 
@@ -470,7 +506,7 @@ Format: ![Alt Text](url)</code></pre><h3 id="Links"><a href="#Links" class="head
 &gt; the present is our past.   </code></pre><h4 id="Inline-code"><a href="#Inline-code" class="headerlink" title="Inline code"></a>Inline code</h4><pre><code>I think you should use an
 `&lt;addr&gt;` element here instead.   </code></pre><h2 id="GitHub-Flavored-Markdown"><a href="#GitHub-Flavored-Markdown" class="headerlink" title="GitHub Flavored Markdown"></a>GitHub Flavored Markdown</h2><p>GitHub.com uses its own version of the Markdown syntax that provides an additional set of useful features, many of which make it easier to work with content on GitHub.com.</p>
 <p>Note that some features of GitHub Flavored Markdown are only available in the descriptions and comments of Issues and Pull Requests. These include @mentions as well as references to SHA-1 hashes, Issues, and Pull Requests. Task Lists are also available in Gist comments and in Gist Markdown files.</p>
-<h3 id="Syntax-highlighting"><a href="#Syntax-highlighting" class="headerlink" title="Syntax highlighting"></a>Syntax highlighting</h3><p>Here’s an example of how you can use syntax highlighting with GitHub Flavored <a target="_blank" rel="noopener" href="https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax">Markdown</a>:</p>
+<h3 id="Syntax-highlighting"><a href="#Syntax-highlighting" class="headerlink" title="Syntax highlighting"></a>Syntax highlighting</h3><p>Here’s an example of how you can use syntax highlighting with GitHub Flavored <span class="exturl" data-url="aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vZW4vZ2l0aHViL3dyaXRpbmctb24tZ2l0aHViL2Jhc2ljLXdyaXRpbmctYW5kLWZvcm1hdHRpbmctc3ludGF4">Markdown<i class="fa fa-external-link-alt"></i></span>:</p>
 <pre><code>  function fancyAlert(arg) &#123;
     if(arg) &#123;
       $.facebox(&#123;div:&#39;#foo&#39;&#125;)
@@ -507,7 +543,7 @@ Content in the first column | Content in the second column</code></pre><p>Would 
 <td>Content in the second column</td>
 </tr>
 </tbody></table>
-<h3 id="SHA-references"><a href="#SHA-references" class="headerlink" title="SHA references"></a>SHA references</h3><p>Any reference to a commit’s <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/SHA-1">SHA-1</a> hash will be automatically converted into a link to that    commit on GitHub.</p>
+<h3 id="SHA-references"><a href="#SHA-references" class="headerlink" title="SHA references"></a>SHA references</h3><p>Any reference to a commit’s <span class="exturl" data-url="aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvU0hBLTE=">SHA-1<i class="fa fa-external-link-alt"></i></span> hash will be automatically converted into a link to that    commit on GitHub.</p>
 <pre><code>16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo@16c999e8c71134401a78d4d46435517b2271d6ac
 mojombo/github-flavored-markdown@16c999e8c71134401a78d4d46435517b2271d6ac</code></pre><h3 id="Issue-references-within-a-repository"><a href="#Issue-references-within-a-repository" class="headerlink" title="Issue references within a repository"></a>Issue references within a repository</h3><p>Any number that refers to an Issue or Pull Request will be automatically converted into a link.</p>
@@ -516,11 +552,11 @@ mojombo#1
 mojombo/github-flavored-markdown#1</code></pre><h3 id="Username-mentions"><a href="#Username-mentions" class="headerlink" title="Username @mentions"></a>Username @mentions</h3><p>Typing an <code>@</code> symbol, followed by a username, will notify that person to come and view the comment. This is called an “@mention”, because you’re mentioning the individual. You can also @mention teams within an organization.</p>
 <h3 id="Automatic-linking-for-URLS"><a href="#Automatic-linking-for-URLS" class="headerlink" title="Automatic linking for URLS"></a>Automatic linking for URLS</h3><p>Any URL (like <code>http://www.github.com/</code>) will be automatically converted into a clickable link.</p>
 <h3 id="Strikethrough"><a href="#Strikethrough" class="headerlink" title="Strikethrough"></a>Strikethrough</h3><p>Any word wrapped with two tildes (like <code>~~this~~</code>) will appear crossed out.</p>
-<h3 id="Emoji"><a href="#Emoji" class="headerlink" title="Emoji"></a>Emoji</h3><p>GitHub supports <a target="_blank" rel="noopener" href="https://help.github.com/en/github/writing-on-github/basic-writing-and-formatting-syntax#using-emoji">emoji</a>!</p>
-<p>To see a list of every image we support, check out the <a target="_blank" rel="noopener" href="https://github.com/ikatyang/emoji-cheat-sheet/blob/master/README.md">Emoji Cheat Sheet</a>.</p>
+<h3 id="Emoji"><a href="#Emoji" class="headerlink" title="Emoji"></a>Emoji</h3><p>GitHub supports <span class="exturl" data-url="aHR0cHM6Ly9oZWxwLmdpdGh1Yi5jb20vZW4vZ2l0aHViL3dyaXRpbmctb24tZ2l0aHViL2Jhc2ljLXdyaXRpbmctYW5kLWZvcm1hdHRpbmctc3ludGF4I3VzaW5nLWVtb2pp">emoji<i class="fa fa-external-link-alt"></i></span>!</p>
+<p>To see a list of every image we support, check out the <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2lrYXR5YW5nL2Vtb2ppLWNoZWF0LXNoZWV0L2Jsb2IvbWFzdGVyL1JFQURNRS5tZA==">Emoji Cheat Sheet<i class="fa fa-external-link-alt"></i></span>.</p>
 <h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>Markdown的练习进程很顺利，把GitHub的文章用来练习，顺便学习下hexo下用Markdown 的选项卡.好在一些语法上的疑惑都解决了</p>
-<p>引用：<a target="_blank" rel="noopener" href="https://guides.github.com/features/mastering-markdown/#syntax">Mastering Markdown</a></p>
-<p>参考：<a target="_blank" rel="noopener" href="https://fanandjiu.com/Hexo%E5%86%99%E4%BD%9C%E8%AF%AD%E6%B3%95%E6%8C%87%E5%8D%97/">Hexo写作语法指南</a></p>
+<p>引用：<span class="exturl" data-url="aHR0cHM6Ly9ndWlkZXMuZ2l0aHViLmNvbS9mZWF0dXJlcy9tYXN0ZXJpbmctbWFya2Rvd24vI3N5bnRheA==">Mastering Markdown<i class="fa fa-external-link-alt"></i></span></p>
+<p>参考：<span class="exturl" data-url="aHR0cHM6Ly9mYW5hbmRqaXUuY29tL0hleG8lRTUlODYlOTklRTQlQkQlOUMlRTglQUYlQUQlRTYlQjMlOTUlRTYlOEMlODclRTUlOEQlOTcv">Hexo写作语法指南<i class="fa fa-external-link-alt"></i></span></p>
 <hr>
 
     </div>
@@ -562,13 +598,13 @@ mojombo/github-flavored-markdown#1</code></pre><h3 id="Username-mentions"><a hre
       <a href="https://kugougo.github.io/archives/7e5f3ff5.html" title="Mastering Markdown">https://kugougo.github.io/archives/7e5f3ff5.html</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC8="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
   </li>
 </ul>
 </div>
 
           <div class="post-tags">
-              <a href="/tags/Markdown/" rel="tag"># Markdown</a>
+              <a href="/tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
           </div>
 
         
@@ -624,7 +660,7 @@ mojombo/github-flavored-markdown#1</code></pre><h3 id="Username-mentions"><a hre
 
 
 <div class="copyright">
-  &copy; 
+  &copy; 2020 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-blog"></i>
@@ -708,7 +744,6 @@ mojombo/github-flavored-markdown#1</code></pre><h3 id="Username-mentions"><a hre
   <script src="//cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
 var pjax = new Pjax({
   selectors: [
@@ -745,6 +780,7 @@ document.addEventListener('pjax:success', () => {
 
 
   
+<script src="/js/local-search.js"></script>
 
 
 
@@ -755,41 +791,94 @@ document.addEventListener('pjax:success', () => {
   <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+<script data-pjax>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
 
-    <div class="pjax">
+    function addCount(Counter) {
+      const visitors = document.querySelector('.leancloud_visitors');
+      const url = decodeURI(visitors.id);
+      const title = visitors.dataset.flagTitle;
 
-  <script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              const target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            const counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      const visitors = document.querySelectorAll('.leancloud_visitors');
+      const entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            const target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"JtPRyBPFp1GCqw12CHIuexMX-gzGzoHsz","app_key":"ra4uNGsSoy9eDgYaHV1aXLxP","server_url":null,"security":true};
+    function fetchData(api_server) {
+      const Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
       }
-    };
-    const script = document.createElement('script');
-    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
-    script.defer = true;
-    document.head.appendChild(script);
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.typesetClear();
-    MathJax.texReset();
-    MathJax.typeset();
-  }
+    }
+
+    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
 </script>
 
+    <div class="pjax">
 
 
 <script async src="/js/fireworks.js"></script>

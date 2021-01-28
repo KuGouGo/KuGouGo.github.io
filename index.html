@@ -16,7 +16,7 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Monda:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.1/css/all.min.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css">
@@ -24,7 +24,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"kugougo.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
+    var CONFIG = {"hostname":"kugougo.github.io","root":"/","images":"/images","scheme":"Gemini","version":"8.2.0","exturl":true,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="远赴人间惊鸿宴，一睹人间盛世颜.">
 <meta property="og:type" content="website">
@@ -51,6 +51,15 @@
 </script>
 <title>孤岛鲸</title>
   
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165257872-1"></script>
+    <script data-pjax>
+      if (CONFIG.hostname === location.hostname) {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-165257872-1');
+      }
+    </script>
 
 
 
@@ -118,6 +127,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -131,11 +141,37 @@
         <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>归档</a></li>
         <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>时间轴</a></li>
         <li class="menu-item menu-item-playlist"><a href="/playlist/" rel="section"><i class="fab fa-playstation fa-fw"></i>音悦台</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>找茬儿
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
         
@@ -196,13 +232,13 @@
 </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
-        <a href="https://github.com/KuGouGo" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;KuGouGo" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i></a>
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0t1R291R28=" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;KuGouGo"><i class="fab fa-github fa-fw"></i></span>
       </span>
       <span class="links-of-author-item">
         <a href="https://kugougo.github.io/atom.xml" title="RSS → https:&#x2F;&#x2F;kugougo.github.io&#x2F;atom.xml"><i class="fa fa-rss fa-fw"></i></a>
       </span>
       <span class="links-of-author-item">
-        <a href="mailto:1475913017@qq.com" title="E-Mail → mailto:1475913017@qq.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
+        <span class="exturl" data-url="bWFpbHRvOjE0NzU5MTMwMTdAcXEuY29t" title="E-Mail → mailto:1475913017@qq.com"><i class="fa fa-envelope fa-fw"></i></span>
       </span>
   </div>
 
@@ -296,6 +332,13 @@
     </span>
 
   
+    <span id="/archives/3ba6821.html" class="post-meta-item leancloud_visitors" data-flag-title="竭泽而渔" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
       </div>
       <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
@@ -325,7 +368,7 @@
 <blockquote>
 <p>薄衾孤枕，梦回人静，彻晓潇潇雨</p>
 </blockquote>
-<p><img data-src="https://images.pexels.com/photos/3876328/pexels-photo-3876328.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></p>
+<p><img src="https://images.pexels.com/photos/3876328/pexels-photo-3876328.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt=""></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/archives/3ba6821.html#more" rel="contents">
@@ -400,6 +443,13 @@
     </span>
 
   
+    <span id="/archives/95e5f896.html" class="post-meta-item leancloud_visitors" data-flag-title="将Hexo博客备份到Github" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
       </div>
       <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
@@ -426,7 +476,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>前段时间折腾了下Hexo的next 5.0+和next 7.8+的版本，具体体验上很不错，由于自己的原因，老是忘记备份，放在文件夹又不见得回去把它翻出来，辛辛苦苦写的文章不能就这样没了，于是想到Hexo博客可不可以备份到Github呢？</p>
-<p><img data-src="https://wallroom.io/img/1920x1200/thumb/bg-38d4bcd.jpg" alt=""></p>
+<p><img src="https://wallroom.io/img/1920x1200/thumb/bg-38d4bcd.jpg" alt=""></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/archives/95e5f896.html#more" rel="contents">
@@ -497,6 +547,13 @@
     </span>
 
   
+    <span id="/archives/7e5f3ff5.html" class="post-meta-item leancloud_visitors" data-flag-title="Mastering Markdown" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
       </div>
       <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
@@ -523,7 +580,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>Markdown is a text-to-HTML conversion tool for web writers. Markdown allows you to write using an easy-to-read, easy-to-write plain text format, then convert it to structurally valid XHTML (or HTML).</p>
-<p><img data-src="https://wallroom.io/img/1920x1080/thumb/bg-35fb13d.jpg" alt=""></p>
+<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-35fb13d.jpg" alt=""></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/archives/7e5f3ff5.html#more" rel="contents">
@@ -594,6 +651,13 @@
     </span>
 
   
+    <span id="/archives/4668f577.html" class="post-meta-item leancloud_visitors" data-flag-title="赋闲的一天" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
       </div>
       <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
@@ -620,7 +684,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>毕业报告完成的匆匆忙忙,没有一丝急迫感,貌似也找不到什么特别的感觉,闲来无事记上一记.</p>
-<p><img data-src="https://wallroom.io/img/1920x1080/thumb/bg-0b9df28.jpg" alt=""></p>
+<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0b9df28.jpg" alt=""></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/archives/4668f577.html#more" rel="contents">
@@ -691,6 +755,13 @@
     </span>
 
   
+    <span id="/archives/83682157.html" class="post-meta-item leancloud_visitors" data-flag-title="第一次搭建hexo博客" title="阅读次数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span class="leancloud-visitors-count"></span>
+    </span>
       </div>
       <div class="post-meta">
     <span class="post-meta-item" title="本文字数">
@@ -719,7 +790,7 @@
           <blockquote>
 <p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
 </blockquote>
-<p><img data-src="https://wallroom.io/img/1920x1080/thumb/bg-0ea4426.jpg" alt=""></p>
+<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0ea4426.jpg" alt=""></p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/archives/83682157.html#more" rel="contents">
@@ -776,7 +847,7 @@
 
 
 <div class="copyright">
-  &copy; 
+  &copy; 2020 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-blog"></i>
@@ -860,7 +931,6 @@
   <script src="//cdn.jsdelivr.net/npm/@next-theme/pjax@0.4.0/pjax.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js"></script>
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script>
 var pjax = new Pjax({
   selectors: [
@@ -897,6 +967,7 @@ document.addEventListener('pjax:success', () => {
 
 
   
+<script src="/js/local-search.js"></script>
 
 
 
@@ -907,41 +978,94 @@ document.addEventListener('pjax:success', () => {
   <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
+<script data-pjax>
+  (function() {
+    function leancloudSelector(url) {
+      url = encodeURI(url);
+      return document.getElementById(url).querySelector('.leancloud-visitors-count');
+    }
 
-    <div class="pjax">
+    function addCount(Counter) {
+      const visitors = document.querySelector('.leancloud_visitors');
+      const url = decodeURI(visitors.id);
+      const title = visitors.dataset.flagTitle;
 
-  <script>
-  if (typeof MathJax === 'undefined') {
-    window.MathJax = {
-      tex: {
-        inlineMath: {'[+]': [['$', '$']]},
-        tags: 'ams'
-      },
-      options: {
-        renderActions: {
-          insertedScript: [200, () => {
-            document.querySelectorAll('mjx-container').forEach(node => {
-              const target = node.parentNode;
-              if (target.nodeName.toLowerCase() === 'li') {
-                target.parentNode.classList.add('has-jax');
-              }
-            });
-          }, '', false]
-        }
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          if (results.length > 0) {
+            const counter = results[0];
+            leancloudSelector(url).innerText = counter.time + 1;
+            Counter('put', '/classes/Counter/' + counter.objectId, { time: { '__op': 'Increment', 'amount': 1 } })
+              .catch(error => {
+                console.error('Failed to save visitor count', error);
+              });
+          } else {
+              leancloudSelector(url).innerText = 'Counter not initialized! More info at console err msg.';
+              console.error('ATTENTION! LeanCloud counter has security bug, see how to solve it here: https://github.com/theme-next/hexo-leancloud-counter-security. \n However, you can still use LeanCloud without security, by setting `security` option to `false`.');
+            
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    function showTime(Counter) {
+      const visitors = document.querySelectorAll('.leancloud_visitors');
+      const entries = [...visitors].map(element => {
+        return decodeURI(element.id);
+      });
+
+      Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({ url: { '$in': entries } })))
+        .then(response => response.json())
+        .then(({ results }) => {
+          for (let url of entries) {
+            const target = results.find(item => item.url === url);
+            leancloudSelector(url).innerText = target ? target.time : 0;
+          }
+        })
+        .catch(error => {
+          console.error('LeanCloud Counter Error', error);
+        });
+    }
+
+    const { app_id, app_key, server_url } = {"enable":true,"app_id":"JtPRyBPFp1GCqw12CHIuexMX-gzGzoHsz","app_key":"ra4uNGsSoy9eDgYaHV1aXLxP","server_url":null,"security":true};
+    function fetchData(api_server) {
+      const Counter = (method, url, data) => {
+        return fetch(`${api_server}/1.1${url}`, {
+          method,
+          headers: {
+            'X-LC-Id'     : app_id,
+            'X-LC-Key'    : app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      if (CONFIG.page.isPost) {
+        if (CONFIG.hostname !== location.hostname) return;
+        addCount(Counter);
+      } else if (document.querySelectorAll('.post-title-link').length >= 1) {
+        showTime(Counter);
       }
-    };
-    const script = document.createElement('script');
-    script.src = '//cdn.jsdelivr.net/npm/mathjax@3.1.2/es5/tex-mml-chtml.js';
-    script.defer = true;
-    document.head.appendChild(script);
-  } else {
-    MathJax.startup.document.state(0);
-    MathJax.typesetClear();
-    MathJax.texReset();
-    MathJax.typeset();
-  }
+    }
+
+    const api_server = app_id.slice(-9) === '-MdYXbMMI' ? `https://${app_id.slice(0, 8).toLowerCase()}.api.lncldglobal.com` : server_url;
+
+    if (api_server) {
+      fetchData(api_server);
+    } else {
+      fetch('https://app-router.leancloud.cn/2/route?appId=' + app_id)
+        .then(response => response.json())
+        .then(({ api_server }) => {
+          fetchData('https://' + api_server);
+        });
+    }
+  })();
 </script>
 
+    <div class="pjax">
 
 
 <script async src="/js/fireworks.js"></script>
