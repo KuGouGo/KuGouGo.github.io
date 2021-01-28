@@ -198,6 +198,54 @@ mojombo/github-flavored-markdown#1</code></pre><h3 id="Username-mentions"><a hre
       </tags>
   </entry>
   <entry>
+    <title>第一次搭建hexo博客</title>
+    <url>/archives/83682157.html</url>
+    <content><![CDATA[<blockquote>
+<p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
+</blockquote>
+<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0ea4426.jpg" alt=""></p>
+<a id="more"></a>
+<p>经过几天初步探索与实践，一路摸爬滚打，开始有了现在的效果。今天写下第一篇小记来记录下。</p>
+<h4 id="目前初步完成了以下"><a href="#目前初步完成了以下" class="headerlink" title="目前初步完成了以下"></a>目前初步完成了以下</h4><ul>
+<li>完成了博客的初步搭建，历时两天</li>
+<li>完成了部分个性化的内容，历时五天<ul>
+<li>通过<strong>Aplayer</strong>设置歌单</li>
+<li>添加博客背景</li>
+<li>添加了可爱的看板娘</li>
+<li>设置了博客运行时间</li>
+<li>添加了评论系统  </li>
+<li>添加了个性back2top</li>
+<li>添加了今日诗词</li>
+<li>添加了文末声明</li>
+<li>添加了博客数据统计</li>
+<li>更新了文末标签</li>
+</ul>
+</li>
+</ul>
+<h4 id="目前在计划中的事情"><a href="#目前在计划中的事情" class="headerlink" title="目前在计划中的事情"></a>目前在计划中的事情</h4><p>-[x] 找到一个免费的图床为博客后续做准备<br>-[x] 将<strong>Markdown</strong>用于写写日常来练习<br>-[x] 继续打磨我的博客<br>-[ ] 好好学习，天天向上  </p>
+<h4 id="遇到的些许问题"><a href="#遇到的些许问题" class="headerlink" title="遇到的些许问题"></a>遇到的些许问题</h4><ol>
+<li><p>next主题设置并不生效不停的采取<code>$ hexo clean</code> <code>$ hexo g &amp;&amp; hexo s</code> <code>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
+</li>
+<li><p>APlayer插件放置的位置不理想，也不生成自己想要的效果,详情参考<a href="https://yxyvpn.com/2020/04/15/pjax%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E5%88%9D%E5%A7%8B%E5%8C%96aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/">pjax导致无法初始化aplayer音乐播放器</a>，主要问题如下：</p>
+</li>
+</ol>
+<p>1.Aplayer主页插件和歌单里面的切换有干扰</p>
+<p>2.Aplayer的<font color=#FF6600>Meting.js</font>由于没有CDN可以引用，只能下载<a href="https://github.com/metowolf/MetingJS/raw/v1.2/src/Meting.js">MetingJS 1.2.0</a>源码，引用到本地的路径,来达到效果</p>
+<p>3.博客主页没有预计的<font color=Blue>RSS</font>效果实现</p>
+<p>4.NexT主题版本升级迁移数据耗时良久</p>
+<p>5.中英文符号的切换导致博客页面没有预计效果</p>
+<hr>
+<p>以上这些问题对一个刚刚接触这方面的我来说，有问题只能使劲gang <a href="https://www.google.com/">Google</a>。好在一切都已经进入了正轨，接下来就开始享受拥有博客的快乐时光。感谢自己不抛弃不放弃的精神！</p>
+<p>可以听听<a href="https://kugougo.github.io/playlist/">我的音乐</a></p>
+]]></content>
+      <categories>
+        <category>遇见hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo基础</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>将Hexo博客备份到Github</title>
     <url>/archives/95e5f896.html</url>
     <content><![CDATA[<p>前段时间折腾了下Hexo的next 5.0+和next 7.8+的版本，具体体验上很不错，由于自己的原因，老是忘记备份，放在文件夹又不见得回去把它翻出来，辛辛苦苦写的文章不能就这样没了，于是想到Hexo博客可不可以备份到Github呢？</p>
@@ -258,54 +306,6 @@ mojombo/github-flavored-markdown#1</code></pre><h3 id="Username-mentions"><a hre
       <tags>
         <tag>hexo基础</tag>
         <tag>备份</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>第一次搭建hexo博客</title>
-    <url>/archives/83682157.html</url>
-    <content><![CDATA[<blockquote>
-<p>人远比自己想象的要坚强,特别是当你回头看看的时候,你会发现自己走了一段自己都没想到的路</p>
-</blockquote>
-<p><img src="https://wallroom.io/img/1920x1080/thumb/bg-0ea4426.jpg" alt=""></p>
-<a id="more"></a>
-<p>经过几天初步探索与实践，一路摸爬滚打，开始有了现在的效果。今天写下第一篇小记来记录下。</p>
-<h4 id="目前初步完成了以下"><a href="#目前初步完成了以下" class="headerlink" title="目前初步完成了以下"></a>目前初步完成了以下</h4><ul>
-<li>完成了博客的初步搭建，历时两天</li>
-<li>完成了部分个性化的内容，历时五天<ul>
-<li>通过<strong>Aplayer</strong>设置歌单</li>
-<li>添加博客背景</li>
-<li>添加了可爱的看板娘</li>
-<li>设置了博客运行时间</li>
-<li>添加了评论系统  </li>
-<li>添加了个性back2top</li>
-<li>添加了今日诗词</li>
-<li>添加了文末声明</li>
-<li>添加了博客数据统计</li>
-<li>更新了文末标签</li>
-</ul>
-</li>
-</ul>
-<h4 id="目前在计划中的事情"><a href="#目前在计划中的事情" class="headerlink" title="目前在计划中的事情"></a>目前在计划中的事情</h4><p>-[x] 找到一个免费的图床为博客后续做准备<br>-[x] 将<strong>Markdown</strong>用于写写日常来练习<br>-[x] 继续打磨我的博客<br>-[ ] 好好学习，天天向上  </p>
-<h4 id="遇到的些许问题"><a href="#遇到的些许问题" class="headerlink" title="遇到的些许问题"></a>遇到的些许问题</h4><ol>
-<li><p>next主题设置并不生效不停的采取<code>$ hexo clean</code> <code>$ hexo g &amp;&amp; hexo s</code> <code>$ hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></p>
-</li>
-<li><p>APlayer插件放置的位置不理想，也不生成自己想要的效果,详情参考<a href="https://yxyvpn.com/2020/04/15/pjax%E5%AF%BC%E8%87%B4%E6%97%A0%E6%B3%95%E5%88%9D%E5%A7%8B%E5%8C%96aplayer%E9%9F%B3%E4%B9%90%E6%92%AD%E6%94%BE%E5%99%A8/">pjax导致无法初始化aplayer音乐播放器</a>，主要问题如下：</p>
-</li>
-</ol>
-<p>1.Aplayer主页插件和歌单里面的切换有干扰</p>
-<p>2.Aplayer的<font color=#FF6600>Meting.js</font>由于没有CDN可以引用，只能下载<a href="https://github.com/metowolf/MetingJS/raw/v1.2/src/Meting.js">MetingJS 1.2.0</a>源码，引用到本地的路径,来达到效果</p>
-<p>3.博客主页没有预计的<font color=Blue>RSS</font>效果实现</p>
-<p>4.NexT主题版本升级迁移数据耗时良久</p>
-<p>5.中英文符号的切换导致博客页面没有预计效果</p>
-<hr>
-<p>以上这些问题对一个刚刚接触这方面的我来说，有问题只能使劲gang <a href="https://www.google.com/">Google</a>。好在一切都已经进入了正轨，接下来就开始享受拥有博客的快乐时光。感谢自己不抛弃不放弃的精神！</p>
-<p>可以听听<a href="https://kugougo.github.io/playlist/">我的音乐</a></p>
-]]></content>
-      <categories>
-        <category>遇见hexo</category>
-      </categories>
-      <tags>
-        <tag>hexo基础</tag>
       </tags>
   </entry>
   <entry>
