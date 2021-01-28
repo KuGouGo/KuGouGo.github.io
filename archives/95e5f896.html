@@ -285,7 +285,7 @@
 <p><img src="https://wallroom.io/img/1920x1200/thumb/bg-38d4bcd.jpg" alt=""></p>
 <a id="more"></a>
 
-<h2 id="一-使用hexo-git-backup插件"><a href="#一-使用hexo-git-backup插件" class="headerlink" title="一.使用hexo-git-backup插件"></a>一.使用hexo-git-backup插件</h2><p>hexo-git-backup插件在Hexo官网的插件里是搜不到的，这个插件发布在了<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvbmV5Y29kZS9oZXhvLWdpdC1iYWNrdXA=">GitHub<i class="fa fa-external-link-alt"></i></span>上，关于安装使用官方也给了很简洁易懂的说明文档。</p>
+<h2 id="一-使用hexo-git-backup插件"><a href="#一-使用hexo-git-backup插件" class="headerlink" title="一.使用hexo-git-backup插件"></a>一.使用hexo-git-backup插件</h2><p>hexo-git-backup插件在Hexo官网的插件里是搜不到的，这个插件发布在了<a target="_blank" rel="noopener" href="https://github.com/coneycode/hexo-git-backup">GitHub</a>上，关于安装使用官方也给了很简洁易懂的说明文档。</p>
 <h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p>如果你的Hexo版本是2.x.x（查看Hexo版本可使用命令：<code>hexo version</code>）在终端中使用如下命令安装：<br><code>$ npm install hexo-git-backup@0.0.91 --save</code><br>如果你的Hexo版本是3.x.x+则使用如下命令安装:<br><code>$ npm install hexo-git-backup --save</code></p>
 <h3 id="插件的更新"><a href="#插件的更新" class="headerlink" title="插件的更新"></a>插件的更新</h3><p>如果是通过<code>$ npm install hexo-git-backup --save</code>命令安装的那么先要删除掉旧版本再升级，具体命令如下：<br><code>$ npm remove hexo-git-backup</code><br><code>$ npm install hexo-git-backup --save</code></p>
 <h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>在hexo的_config.yml里配置这个插件：</p>
@@ -307,7 +307,7 @@
 <h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>从现在开始使用以下命令你就可以备份整个博客了！<br><code>$ hexo backup</code><br>或者使用以下简写命令也可以：<br><code>$ hexo b</code></p>
 <h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>如果你按照上面的备份步骤备份了主题，那目录中的themes/theme name/.git这个文件就会被移除掉哦.</p>
 <hr>
-<h2 id="二-在Github-io上建立博客新分支"><a href="#二-在Github-io上建立博客新分支" class="headerlink" title="二.在Github.io上建立博客新分支"></a>二.在Github.io上建立博客新分支</h2><h3 id="创建博客仓库新的分支"><a href="#创建博客仓库新的分支" class="headerlink" title="创建博客仓库新的分支"></a>创建博客仓库新的分支</h3><p>在Github.io上建立博客时已经开了一个新仓库了，如果再开另一个仓库存放源代码有点浪费，因此采用建立新分支的方法备份博客。不会建分支可以参考<span class="exturl" data-url="aHR0cHM6Ly9naXQtc2NtLmNvbS9ib29rL3poL3YyL0dpdC0lRTUlODglODYlRTYlOTQlQUYtJUU1JTg4JTg2JUU2JTk0JUFGJUU3JTlBJTg0JUU2JTk2JUIwJUU1JUJCJUJBJUU0JUI4JThFJUU1JTkwJTg4JUU1JUI5JUI2">Git 分支 - 分支的新建与合并<i class="fa fa-external-link-alt"></i></span>.博客都已经建立好了，那什么时候创建备份分支都是可以的.</p>
+<h2 id="二-在Github-io上建立博客新分支"><a href="#二-在Github-io上建立博客新分支" class="headerlink" title="二.在Github.io上建立博客新分支"></a>二.在Github.io上建立博客新分支</h2><h3 id="创建博客仓库新的分支"><a href="#创建博客仓库新的分支" class="headerlink" title="创建博客仓库新的分支"></a>创建博客仓库新的分支</h3><p>在Github.io上建立博客时已经开了一个新仓库了，如果再开另一个仓库存放源代码有点浪费，因此采用建立新分支的方法备份博客。不会建分支可以参考<a target="_blank" rel="noopener" href="https://git-scm.com/book/zh/v2/Git-%E5%88%86%E6%94%AF-%E5%88%86%E6%94%AF%E7%9A%84%E6%96%B0%E5%BB%BA%E4%B8%8E%E5%90%88%E5%B9%B6">Git 分支 - 分支的新建与合并</a>.博客都已经建立好了，那什么时候创建备份分支都是可以的.</p>
 <h4 id="针对博客已经搭建并发布过文章的"><a href="#针对博客已经搭建并发布过文章的" class="headerlink" title="针对博客已经搭建并发布过文章的"></a>针对博客已经搭建并发布过文章的</h4><ol>
 <li><p>在你的博客仓库创建一个分支Hexo（这个命名随意，我这里以Hexo为参考）.</p>
 </li>
@@ -328,8 +328,8 @@
 <li>执行<code>hexo g -d</code>生成静态网页部署至Github上.<br>即重复运行命令的2-3步骤，以上两步没有严格的顺序.</li>
 </ol>
 <h3 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h3><p><strong>感谢：</strong></p>
-<p>简书：  <span class="exturl" data-url="aHR0cHM6Ly93d3cuamlhbnNodS5jb20vcC81N2I1YTM4NGYyMzQ=">Hexo博客备份<i class="fa fa-external-link-alt"></i></span></p>
-<p>Github: <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2NvbmV5Y29kZS9oZXhvLWdpdC1iYWNrdXA=">hexo-git-backup<i class="fa fa-external-link-alt"></i></span></p>
+<p>简书：  <a target="_blank" rel="noopener" href="https://www.jianshu.com/p/57b5a384f234">Hexo博客备份</a></p>
+<p>Github: <a target="_blank" rel="noopener" href="https://github.com/coneycode/hexo-git-backup">hexo-git-backup</a></p>
 <hr>
 
     </div>
