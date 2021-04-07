@@ -60,7 +60,7 @@
 
   <url>
     <loc>https://kugougo.github.io/</loc>
-    <lastmod>2021-03-06</lastmod>
+    <lastmod>2021-04-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -68,28 +68,28 @@
   
   <url>
     <loc>https://kugougo.github.io/tags/Markdown/</loc>
-    <lastmod>2021-03-06</lastmod>
+    <lastmod>2021-04-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kugougo.github.io/tags/hexo%E5%9F%BA%E7%A1%80/</loc>
-    <lastmod>2021-03-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kugougo.github.io/tags/%E8%B9%89%E8%B7%8E%E5%B2%81%E6%9C%88/</loc>
-    <lastmod>2021-03-06</lastmod>
+    <lastmod>2021-04-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kugougo.github.io/tags/%E5%A4%87%E4%BB%BD/</loc>
-    <lastmod>2021-03-06</lastmod>
+    <lastmod>2021-04-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kugougo.github.io/tags/%E8%B9%89%E8%B7%8E%E5%B2%81%E6%9C%88/</loc>
+    <lastmod>2021-04-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -98,28 +98,28 @@
   
   <url>
     <loc>https://kugougo.github.io/categories/%E6%8A%80%E8%83%BD/</loc>
-    <lastmod>2021-03-06</lastmod>
+    <lastmod>2021-04-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kugougo.github.io/categories/%E9%81%87%E8%A7%81hexo/</loc>
-    <lastmod>2021-03-06</lastmod>
+    <lastmod>2021-04-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kugougo.github.io/categories/%E6%9D%82%E8%AE%B0/</loc>
-    <lastmod>2021-03-06</lastmod>
+    <lastmod>2021-04-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://kugougo.github.io/categories/%E9%81%87%E8%A7%81hexo/Github/</loc>
-    <lastmod>2021-03-06</lastmod>
+    <lastmod>2021-04-07</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
